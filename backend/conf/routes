@@ -1,0 +1,17 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# Home page
+GET         /restaurants                   controllers.Restaurant.all(lat: java.lang.Double ?= null, lng: java.lang.Double ?= null, ing: java.util.List[String], side: java.util.List[String], radius: java.lang.Integer ?= 50)
+GET         /restaurant/:id/reviews        controllers.Restaurant.reviews(id: Long)
+GET         /restaurant/:id/menu           controllers.Restaurant.menu(id: Long)
+GET         /ingredients                   controllers.Ingredient.all()
+GET         /sidedishes                    controllers.SideDishes.all()
+POST        /suggestion                    controllers.Suggestion.save()
+GET         /upload                        controllers.Application.uploadGet()
+POST        /upload                        controllers.Application.upload()
+GET         /media/:id                     controllers.Media.getPicture(id: String)
+
+# Map static resources from the /public folder to the /assets URL path
+GET         /assets/*file                  controllers.Assets.versioned(path="/public", file: Asset)

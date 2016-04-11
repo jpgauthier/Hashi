@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_column="2"
+        android:weightSum="100">
+
+    <ImageView
+            android:layout_height="65dp"
+            android:layout_width="65dp"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:id="@+id/list_item_restaurant_img_restaurant" />
+
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+        <TextView
+                android:id="@+id/list_item_restaurant_name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:ellipsize="marquee"
+                android:fontFamily="sans-serif"
+                android:textSize="20sp"
+                android:text="Makimaki sushi"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="15dp"
+                android:layout_alignParentStart="true"
+                android:layout_toStartOf="@+id/list_item_restaurant_rating"/>
+
+        <TextView
+                android:id="@+id/list_item_restaurant_distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:textStyle="italic"
+                android:textSize="13sp"
+                android:text="0.6 km away"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="15dp"/>
+
+        <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/list_item_restaurant_rating"
+                android:src="@drawable/ic_half_star"
+                android:layout_gravity="center"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="-7dp"/>
+
+        <TextView
+                android:id="@+id/list_item_restaurant_nb_matches"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:textStyle="italic"
+                android:textSize="7sp"
+                android:layout_below="@+id/list_item_restaurant_rating"
+                android:layout_alignStart="@+id/list_item_restaurant_rating"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_alignEnd="@+id/list_item_restaurant_rating"/>
+
+    </RelativeLayout>
+</LinearLayout>

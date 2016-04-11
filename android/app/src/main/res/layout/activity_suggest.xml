@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar" />
+
+    <EditText
+            android:id="@+id/suggest_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:elevation="1dp"
+            android:layout_below="@+id/toolbar" android:layout_centerHorizontal="true"
+            android:layout_marginBottom="100dp" android:layout_marginTop="25dp"
+            android:hint="Enter your suggestion here..."
+            android:gravity="top"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:enabled="true"
+            android:editable="true"/>
+
+    <Button
+            android:id="@+id/suggest_btn_send"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Send"
+            android:elevation="1dp"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/menuTextColor"
+            android:layout_gravity="center_horizontal"
+            android:layout_centerHorizontal="true"
+            android:layout_marginRight="25dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginBottom="25dp"
+            android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

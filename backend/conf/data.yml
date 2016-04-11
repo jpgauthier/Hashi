@@ -1,0 +1,5141 @@
+#Cities
+cities:
+    - &waterloo !!models.City
+        name: Waterloo
+
+    - &kitchener !!models.City
+        name: Kitchener
+
+#MenuItem Categories
+categories:
+    - &appetizer !!models.MenuItemCategory
+        name: Appetizer
+        type: SIDE_DISH
+        imagePath: "/media/side_chickenwings.png"
+
+    - &tempuracategory !!models.MenuItemCategory
+        name: Tempura
+        type: SIDE_DISH
+        imagePath: "/media/side_tempura.png"
+
+    - &soupsalad !!models.MenuItemCategory
+        name: Soup & Salad
+        type: SIDE_DISH
+        imagePath: "/media/side_salad.png"
+
+    - &specialroll !!models.MenuItemCategory
+        name: Special Roll
+        type: ROLL
+
+    - &maki !!models.MenuItemCategory
+        name: Maki & Roll
+        type: ROLL
+
+    - &vegroll !!models.MenuItemCategory
+        name: Vegetarian Roll
+        type: ROLL
+
+    - &teriyaki !!models.MenuItemCategory
+        name: Teriyaki
+        type: SIDE_DISH
+        imagePath: "/media/side_beefteriyaki.png"
+
+    - &donburi !!models.MenuItemCategory
+        name: Donburi
+        type: SIDE_DISH
+        imagePath: "/media/side_donburi.png"
+
+    - &sashimi !!models.MenuItemCategory
+        name: Sashimi
+        type: SIDE_DISH
+        imagePath: "/media/side_sashimi.png"
+
+    - &bento !!models.MenuItemCategory
+        name: Bento Box
+        type: SIDE_DISH
+        imagePath: "/media/side_bentobox.png"
+
+    - &sushi !!models.MenuItemCategory
+        name: Sushi
+        type: ROLL
+
+    - &sushipizza !!models.MenuItemCategory
+        name: Sushi Pizza
+        type: ROLL
+
+    - &handroll !!models.MenuItemCategory
+        name: Hand Roll
+        type: ROLL
+
+    - &dessert !!models.MenuItemCategory
+        name: Dessert
+        type: SIDE_DISH
+        imagePath: "/media/side_icecream.png"
+
+#Ingredients
+ingredients:
+    - &avocado !!models.Ingredient
+        name: Avocado
+        imagePath: "/media/ingredient_avocado.png"
+
+    - &cucumber !!models.Ingredient
+        name: Cucumber
+        imagePath: "/media/ingredient_cucumber.png"
+
+    - &egg !!models.Ingredient
+        name: Egg
+        imagePath: "/media/ingredient_egg.png"
+
+    - &squid !!models.Ingredient
+        name: Squid
+        imagePath: "/media/ingredient_squid.png"
+
+    - &crabmeat !!models.Ingredient
+        name: Crab Meat
+        imagePath: "/media/ingredient_crab.png"
+
+    - &seaweed !!models.Ingredient
+        name: Seaweed
+        imagePath: "/media/ingredient_seaweeds.png"
+
+    - &shrimp !!models.Ingredient
+        name: Shrimp
+        imagePath: "/media/ingredient_shrimp.png"
+
+    - &salmon !!models.Ingredient
+        name: Salmon
+        imagePath: "/media/ingredient_salmon.png"
+
+    - &eel !!models.Ingredient
+        name: Eel
+        imagePath: "/media/ingredient_eel.png"
+
+    - &mayonnaise !!models.Ingredient
+        name: Mayonnaise
+        imagePath: "/media/ingredient_mayo.png"
+
+    - &sprouts !!models.Ingredient
+        name: Sprouts
+        imagePath: "/media/ingredient_sprouts.png"
+
+    - &lettuce !!models.Ingredient
+        name: Lettuce
+        imagePath: "/media/ingredient_lettuce.png"
+
+    - &tuna !!models.Ingredient
+        name: Tuna
+        imagePath: "/media/ingredient_tuna.png"
+
+    - &greenonion !!models.Ingredient
+        name: Green Onion
+        imagePath: "/media/ingredient_greenonions.png"
+
+    - &mushrooms !!models.Ingredient
+        name: Mushrooms
+        imagePath: "/media/ingredient_mushrooms.png"
+
+    - &spinach !!models.Ingredient
+        name: Spinach
+        imagePath: "/media/ingredient_spinach.png"
+
+    - &codfish !!models.Ingredient
+        name: Codfish
+        imagePath: "/media/ingredient_codfish.png"
+
+    - &tempura !!models.Ingredient
+        name: Tempura
+        imagePath: "/media/ingredient_tempura.png"
+
+    - &surfclam !!models.Ingredient
+        name: Surf Clam
+        imagePath: "/media/ingredient_clam.png"
+
+    - &sake !!models.Ingredient
+        name: Sake
+        imagePath: "/media/ingredient_sake.png"
+
+    - &tofu !!models.Ingredient
+        name: Tofu
+        imagePath: "/media/ingredient_tofu.png"
+
+    - &creamcheese !!models.Ingredient
+        name: Cream Cheese
+        imagePath: "/media/ingredient_creamcheese.png"
+
+    - &chicken !!models.Ingredient
+        name: Chicken
+        imagePath: "/media/ingredient_chicken.png"
+
+    - &beef !!models.Ingredient
+        name: Beef
+        imagePath: "/media/ingredient_beef.png"
+
+    - &ginger !!models.Ingredient
+        name: Ginger
+        imagePath: "/media/ingredient_ginger.png"
+
+    - &teriyaki !!models.Ingredient
+        name: Teriyaki
+        imagePath: "/media/ingredient_teriyaki.png"
+
+    - &scallop !!models.Ingredient
+        name: Scallop
+        imagePath: "/media/ingredient_scallop.png"
+
+    - &mango !!models.Ingredient
+        name: Mango
+        imagePath: "/media/ingredient_mango.png"
+
+    - &tomatoes !!models.Ingredient
+        name: Tomatoes
+        imagePath: "/media/ingredient_tomato.png"
+
+    - &snapper !!models.Ingredient
+        name: Snapper
+        imagePath: "/media/ingredient_snapper.png"
+
+    - &potato !!models.Ingredient
+        name: Potato
+        imagePath: "/media/ingredient_potato.png"
+
+    - &fisheggs !!models.Ingredient
+        name: Fish Eggs
+        imagePath: "/media/ingredient_fisheggs.png"
+
+    - &asparagus !!models.Ingredient
+        name: Asparagus
+        imagePath: "/media/ingredient_asparagus.png"
+
+    - &kampyo !!models.Ingredient
+        name: Kampyo
+        imagePath: "/media/ingredient_kampyo.png"
+
+    - &carrot !!models.Ingredient
+        name: Carrots
+        imagePath: "/media/ingredient_carrot.png"
+
+    - &cabbage !!models.Ingredient
+        name: Cabbage
+        imagePath: "/media/ingredient_cabbage.png"
+
+    - &broccoli !!models.Ingredient
+        name: Broccoli
+        imagePath: "/media/ingredient_broccoli.png"
+
+    - &radish !!models.Ingredient
+        name: Radish
+        imagePath: "/media/ingredient_radish.png"
+
+    - &mackerel !!models.Ingredient
+        name: Mackerel
+        imagePath: "/media/ingredient_mackerel.png"
+
+    - &yellowtail !!models.Ingredient
+        name: Yellowtail
+        imagePath: "/media/ingredient_yellowtail.png"
+
+    - &octopus !!models.Ingredient
+        name: Octopus
+        imagePath: "/media/ingredient_octopus.png"
+
+    - &pringles !!models.Ingredient
+        name: Pringles
+        imagePath: "/media/ingredient_pringles.png"
+
+    - &pumpkin !!models.Ingredient
+        name: Pumpkin
+        imagePath: "/media/ingredient_pumpkin.png"
+
+    - &eggplant !!models.Ingredient
+        name: Egg Plant
+        imagePath: "/media/ingredient_eggplants.png"
+
+    - &strawberry !!models.Ingredient
+        name: Strawberry
+        imagePath: "/media/ingredient_strawberry.png"
+
+    - &banana !!models.Ingredient
+        name: Banana
+        imagePath: "/media/ingredient_banana.png"
+
+    - &cheese !!models.Ingredient
+        name: Cheese
+        imagePath: "/media/ingredient_cheese.png"
+
+    - &calamari !!models.Ingredient
+        name: Calamari
+        imagePath: "/media/ingredient_calimari.png"
+
+    - &goboroot !!models.Ingredient
+        name: Gobo Root
+        imagePath: "/media/ingredient_gobo.png"
+
+    - &greenbean !!models.Ingredient
+        name: Green Bean
+        imagePath: "/media/ingredient_greenbeans.png"
+
+#Restaurants
+restaurants:
+    - &oyummy !!models.Restaurant
+        name: O'Yummy Sushi
+        latitude: 43.446740
+        longitude: -80.570877
+        address: 646 Erb St W
+        city: *waterloo
+        logoPath: "/media/oyummy_logo.png"
+        imagePath: "/media/oyummy_header.jpg"
+        googleId: ChIJc_JiJfH2K4gR47T0zA0OHxA
+        phone: 1-519-954-6555
+        rating: 7
+
+    - &kinkaku !!models.Restaurant
+        name: Kinkaku Izakaya
+        latitude: 43.451129
+        longitude: -80.493197
+        address: 217 King St W
+        city: *kitchener
+        logoPath: "http://www.kinkakuizakaya.com/images/logo.png"
+        imagePath: "http://irs0.4sqi.net/img/general/width960/7608109_g2h11q3HEwTbpxKgkUG9nF6qmAiCxulH75LUP9SEug4.jpg"
+        googleId: ChIJbab-Z_P0K4gRQaB6jd_oCrM
+        phone: 1-519-208-2688
+        rating: 9
+
+    - &watami  !!models.Restaurant
+        name: Watami Sushi & Sake Bar
+        latitude: 43.465563
+        longitude: -80.522701
+        address: 15 King St N
+        city: *waterloo
+        logoPath: "http://www.watami.ca/img/logo.png"
+        imagePath: "http://irs1.4sqi.net/img/general/width960/79982_lgu_-cLbEKA7QBtppm_pBVoo7WCbqAQve6oe6KjQxRs.jpg"
+        googleId: ChIJZQgoRw30K4gRlITzq_JxOjY
+        phone: 1-519-747-1100
+        rating: 7
+
+    - &itamae !!models.Restaurant
+        name: Itamae Sushi
+        latitude: 43.476662
+        longitude: -80.525448
+        address: 253 King St N
+        city: *waterloo
+        logoPath: "/media/itamae_logo.png"
+        imagePath: "http://itamaesushi.ca/gallery/itamae/waterloo/01.jpg"
+        googleId: ChIJCzOZw9rzK4gRSpqPxl7f7tY
+        phone: 1-519-886-8688
+        rating: 6
+
+    - &sushi99 !!models.Restaurant
+        name: Sushi 99
+        latitude: 43.503714
+        longitude: -80.530809
+        address: 36 Northfield Drive E
+        city: *waterloo
+        logoPath: "/media/sushi99_logo.png"
+        imagePath: "http://sushi99.ca/slideshow-images/dsc03034.jpg"
+        googleId: ChIJTVaAacXzK4gRb7f2fHnXwDw
+        phone: 1-519-725-7799
+        rating: 8
+
+    - &yummyaki !!models.Restaurant
+        name: Yummyaki Japanese Restaurant
+        latitude: 43.503243
+        longitude: -80.527859
+        address: 55 Northfield Drive E
+        city: *waterloo
+        logoPath: "http://www.yummyaki.com/templates/rt_afterburner_j15/images/logo.png"
+        imagePath: "http://www.yummyaki.com/modules/mod_galleryview/gallery/4.jpg"
+        googleId: ChIJPw8MXs_zK4gRGyq6WtBGlPY
+        phone: 1-519-888-9006
+        rating: 8
+
+    - &sakura !!models.Restaurant
+        name: Sakura Island Restaurant
+        latitude: 43.477098
+        longitude: -80.525681
+        address: 255 King St N
+        city: *waterloo
+        logoPath: "http://d2egcvq7li5bpq.cloudfront.net/ca/images/restaurants/464.gif"
+        imagePath: "http://irs3.4sqi.net/img/general/width960/37322450_VaQ6I_2Tu8wdBoqxwOti1oCRRucYfBvm9FaoyDWxoPQ.jpg"
+        googleId: ChIJk2a2SfTzK4gRcM1MXr1FO3s
+        phone: 1-519-886-1812
+        rating: 8
+
+    #- &tomu !!models.Restaurant
+    #    name: Tomu Sushi
+    #    latitude: 43.454718
+    #    longitude: -80.545878
+    #    address: 347 Erb Street W
+    #    city: *waterloo
+    #    logoPath: "http://tomusushi.com/ull/140039259799OTBNPQ.jpg"
+    #    imagePath: "http://tomusushi.com/ull/14006545163CRAIQX.jpg"
+    #    googleId: ChIJBfkXr5_2K4gRSSCxINufk8k
+    #    phone: 1-519-746-1566
+    #    rating: 9
+
+    - &greensushi !!models.Restaurant
+        name: Green Sushi
+        latitude: 43.472445
+        longitude: -80.537524
+        address: 160 University Ave W
+        city: *waterloo
+        phone: 1-519-725-2200
+        rating: 6
+
+    #- &mrsushi !!models.Restaurant
+    #    name: Mr. Sushi
+    #    latitude: 43.473002
+    #    longitude: -80.535576
+    #    address: 140 University Avenue W
+    #    city: *waterloo
+    #    imagePath: "http://d.zmtcdn.com/data/reviews_photos/f05/4aa6090a52a85959f725ceb4cefd7f05_200_thumb.jpg"
+    #    googleId: ChIJCa22AAf0K4gRat6fifMGRVU
+    #    phone: 1-226-647-5525
+    #    rating: 5
+
+    #- &nikoniko !!models.Restaurant
+    #    name: Niko Niko Roll & Sushi
+    #    latitude: 43.449757
+    #    longitude: -80.488593
+    #    address: 20 King St E
+    #    city: *kitchener
+    #    logoPath: "/media/oyummy_logo.png"
+    #    imagePath: "http://media.tumblr.com/tumblr_mf35au0dIH1r5htgf.jpg"
+    #    googleId: ChIJhX98h_L0K4gR6IwrZt0U8Ts
+    #    phone: 1-519-571-0073
+    #    rating: 9
+
+    - &nara !!models.Restaurant
+        name: Nara Sushi Restaurant
+        latitude: 43.415622
+        longitude: -80.510782
+        address: 685 Fischer Hallman Rd
+        city: *kitchener
+        logoPath: "/media/nara_logo.png"
+        googleId: ChIJ_1Vv_pf1K4gReqZMn1OK5_s
+        phone: 1-519-279-4530
+        rating: 8
+
+    - &sushistar !!models.Restaurant
+        name: Sushi Stars
+        latitude: 43.446683
+        longitude: -80.482048
+        address: 450 King Street E
+        city: *kitchener
+        logoPath: "http://d2egcvq7li5bpq.cloudfront.net/ca/images/restaurants/940.gif"
+        imagePath: "http://irs3.4sqi.net/img/general/width960/EH3VN5STBU5ANPC1YFX014VSWPTMIQDJKKCSWSAH14U2RXOJ.jpg"
+        googleId: ChIJgaGRV-n0K4gRtWu-y7JBTbw
+        phone: 1-519-584-2341
+        rating: 8
+
+#Menu Items of O'Yummy Restaurant
+menuitems:
+    - !!models.MenuItem
+        name: Edamame Boiled soy beans
+        category: *appetizer
+        restaurant: *oyummy
+
+    - !!models.MenuItem 
+        name: Gyoza Deep Fried Dumpling 
+        category: *appetizer
+        restaurant: *oyummy
+
+    - !!models.MenuItem 
+        name: Skewer Chicken 
+        category: *appetizer 
+        restaurant: *oyummy
+
+    - !!models.MenuItem 
+        name: Skewer Beef 
+        category: *appetizer
+        restaurant: *oyummy  
+
+    - !!models.MenuItem 
+        name: Skewer Shrimp 
+        category: *appetizer  
+        restaurant: *oyummy
+
+    - !!models.MenuItem 
+        name: Deep Fried Soft Shell Crab 
+        category: *appetizer  
+        restaurant: *oyummy
+
+    - !!models.MenuItem 
+        name: Cheese Wonton 
+        category: *appetizer  
+        restaurant: *oyummy
+
+    - !!models.MenuItem 
+        name: Beef Short Ribs 
+        category: *appetizer  
+        restaurant: *oyummy
+
+    - !!models.MenuItem 
+        name: Chicken Wings 
+        category: *appetizer  
+        restaurant: *oyummy
+
+    - !!models.MenuItem 
+        name: Spring Roll 
+        category: *appetizer  
+        restaurant: *oyummy
+
+    - !!models.MenuItem 
+        name: Deep Fried Scalop 
+        category: *appetizer  
+        restaurant: *oyummy
+
+    - !!models.MenuItem 
+        name: Coconut Shrimp 
+        category: *appetizer  
+        restaurant: *oyummy
+
+    - !!models.MenuItem 
+        name: Sesame Chicken 
+        category: *appetizer  
+        restaurant: *oyummy
+
+    - !!models.MenuItem 
+        name: Sesame Ball 
+        category: *appetizer  
+        restaurant: *oyummy
+
+    - !!models.MenuItem 
+        name: Sugar Ball 
+        category: *appetizer  
+        restaurant: *oyummy
+
+    - !!models.MenuItem 
+        name: Deep Fried Banana 
+        category: *dessert  
+        restaurant: *oyummy
+
+    - !!models.MenuItem 
+        name: Tempura Appetizer 
+        category: *tempuracategory
+        restaurant: *oyummy
+
+    - !!models.MenuItem 
+        name: Squid Tempura 
+        category: *tempuracategory
+        restaurant: *oyummy
+
+    - !!models.MenuItem 
+        name: Vegetable Tempura 
+        category: *tempuracategory
+        restaurant: *oyummy
+
+    - !!models.MenuItem 
+        name: Yam Tempura 
+        category: *tempuracategory
+        restaurant: *oyummy
+
+    - !!models.MenuItem 
+        name: Seafood Tempura 
+        category: *tempuracategory
+        restaurant: *oyummy
+
+    - !!models.MenuItem 
+        name: Shrimp Tempura 
+        category: *tempuracategory
+        restaurant: *oyummy
+
+    - !!models.MenuItem 
+        name: Miso Soup 
+        category: *soupsalad  
+        restaurant: *oyummy
+
+    - !!models.MenuItem 
+        name: Green Salad 
+        category: *soupsalad 
+        restaurant: *oyummy
+
+    - !!models.MenuItem 
+        name: Avocado Salad 
+        category: *soupsalad  
+        restaurant: *oyummy
+
+    - !!models.MenuItem 
+        name: Mango Salad 
+        category: *soupsalad  
+        restaurant: *oyummy
+
+    - !!models.MenuItem 
+        name: Seaweed Salad 
+        category: *soupsalad  
+        restaurant: *oyummy
+
+    - !!models.MenuItem 
+        name: Seafood Salad 
+        category: *soupsalad  
+        restaurant: *oyummy
+
+    - !!models.MenuItem 
+        name: California Salad 
+        category: *soupsalad  
+        restaurant: *oyummy
+
+    - !!models.MenuItem 
+        name: O'Yummy Roll 
+        category: *specialroll  
+        restaurant: *oyummy
+        ingredients:
+            - *shrimp
+            - *salmon
+            - *avocado
+            - *fisheggs
+            - *crabmeat
+
+    - !!models.MenuItem 
+        name: Philadelphia Roll 
+        category: *specialroll  
+        restaurant: *oyummy
+        ingredients:
+            - *salmon
+            - *creamcheese
+            - *avocado
+
+    - !!models.MenuItem 
+        name: Crystal Roll 
+        category: *specialroll 
+        restaurant: *oyummy
+        ingredients:
+            - *crabmeat
+            - *seaweed
+            - *avocado
+
+    - !!models.MenuItem 
+        name: Blossom Roll 
+        category: *specialroll
+        restaurant: *oyummy 
+        ingredients:
+            - *asparagus
+            - *salmon
+            - *fisheggs
+
+    - !!models.MenuItem 
+        name: Passian Roll 
+        category: *specialroll  
+        restaurant: *oyummy
+        ingredients:
+            - *eel
+            - *creamcheese
+            - *avocado
+
+    - !!models.MenuItem 
+        name: Lucky Roll 
+        category: *specialroll  
+        restaurant: *oyummy
+        ingredients:
+            - *shrimp
+            - *creamcheese
+            - *crabmeat
+            - *cucumber
+
+    - !!models.MenuItem 
+        name: Squid Roll 
+        category: *specialroll  
+        restaurant: *oyummy
+        ingredients:
+            - *squid
+            - *cucumber
+
+    - !!models.MenuItem 
+        name: Ice Island Roll 
+        category: *specialroll  
+        restaurant: *oyummy
+        ingredients:
+            - *crabmeat
+            - *avocado
+            - *fisheggs
+
+    - !!models.MenuItem 
+        name: Waterloo Roll 
+        category: *maki  
+        restaurant: *oyummy
+        ingredients:
+            - *crabmeat
+            - *shrimp
+            - *cucumber
+            - *avocado
+
+    - !!models.MenuItem 
+        name: Golden Roll 
+        category: *maki 
+        restaurant: *oyummy
+        ingredients:
+            - *seaweed
+            - *mayonnaise
+            - *tuna
+            - *fisheggs
+            - *cucumber
+            - *avocado
+
+    - !!models.MenuItem 
+        name: Sexy Snapper Roll 
+        category: *maki
+        restaurant: *oyummy  
+        ingredients:
+            - *snapper
+            - *avocado
+
+    - !!models.MenuItem 
+        name: Avocado Dragon Roll 
+        category: *maki 
+        imagePath: "/media/oyummy_dragonroll.jpg" 
+        restaurant: *oyummy
+        ingredients:
+            - *tempura
+            - *shrimp
+            - *cucumber 
+            - *avocado 
+            - *crabmeat 
+            - *fisheggs
+            - *mayonnaise
+
+    - !!models.MenuItem 
+        name: BBQ Eel Dragon Roll 
+        category: *maki 
+        imagePath: "/media/oyummy_dragonroll.jpg" 
+        restaurant: *oyummy
+        ingredients:
+            - *eel
+            - *tempura
+            - *shrimp
+            - *cucumber 
+            - *avocado 
+            - *crabmeat 
+            - *fisheggs
+            - *mayonnaise
+
+    - !!models.MenuItem 
+        name: Salmon Dragon Roll 
+        category: *maki 
+        imagePath: "/media/oyummy_dragonroll.jpg" 
+        restaurant: *oyummy
+        ingredients:
+            - *salmon
+            - *tempura
+            - *shrimp
+            - *cucumber 
+            - *avocado 
+            - *crabmeat 
+            - *fisheggs
+            - *mayonnaise
+
+    - !!models.MenuItem 
+        name: Spider Roll 
+        category: *maki  
+        restaurant: *oyummy
+        ingredients:
+            - *crabmeat
+            - *cucumber
+            - *lettuce
+            - *avocado
+            - *mayonnaise
+            - *fisheggs
+
+    - !!models.MenuItem 
+        name: Rainbow Roll 
+        category: *maki  
+        restaurant: *oyummy
+        ingredients:
+            - *crabmeat
+            - *avocado
+            - *cucumber
+            - *salmon
+            - *tuna
+
+    - !!models.MenuItem 
+        name: Futomaki Roll 
+        category: *maki  
+        restaurant: *oyummy
+        ingredients:
+            - *mushrooms
+            - *cucumber
+            - *spinach
+            - *egg
+            - *codfish
+
+    - !!models.MenuItem 
+        name: Dynamite Roll 
+        category: *maki  
+        restaurant: *oyummy
+        ingredients:
+            - *shrimp
+            - *avocado
+
+    - !!models.MenuItem 
+        name: California Roll 
+        category: *maki  
+        restaurant: *oyummy
+        ingredients:
+            - *crabmeat
+            - *avocado
+            - *cucumber
+
+    - !!models.MenuItem 
+        name: Shrimp Tempura Roll 
+        category: *maki  
+        restaurant: *oyummy
+        ingredients:
+            - *seaweed
+            - *tempura
+            - *avocado
+            - *cucumber
+
+    - !!models.MenuItem 
+        name: Cucumber & Surf Clam Roll 
+        category: *maki  
+        restaurant: *oyummy
+        ingredients:
+            - *cucumber
+            - *surfclam
+
+    - !!models.MenuItem 
+        name: Unagi Roll 
+        category: *maki  
+        restaurant: *oyummy
+        ingredients:
+            - *eel
+            - *cucumber
+            - *sprouts
+            - *seaweed
+
+    - !!models.MenuItem 
+        name: Chicken Teriyaki Roll 
+        category: *maki  
+        restaurant: *oyummy
+        ingredients:
+            - *sake
+            - *chicken
+            - *teriyaki
+
+    - !!models.MenuItem 
+        name: B.C Roll 
+        category: *maki  
+        restaurant: *oyummy
+        ingredients:
+            - *salmon
+            - *avocado
+            - *fisheggs
+
+    - !!models.MenuItem 
+        name: Spicy Salmon Roll 
+        category: *maki  
+        restaurant: *oyummy
+        ingredients:
+            - *salmon
+
+    - !!models.MenuItem 
+        name: Spicy Tuna Roll 
+        category: *maki  
+        restaurant: *oyummy
+        ingredients:
+            - *tuna
+
+    - !!models.MenuItem 
+        name: Spicy Crab Meat Roll 
+        category: *maki  
+        restaurant: *oyummy
+        ingredients:
+            - *crabmeat
+
+    - !!models.MenuItem 
+        name: Salmon Skin Roll 
+        category: *maki  
+        restaurant: *oyummy
+        ingredients:
+            - *salmon
+
+    - !!models.MenuItem 
+        name: Salmon Roll 
+        category: *maki  
+        restaurant: *oyummy
+        ingredients:
+            - *salmon
+
+    - !!models.MenuItem 
+        name: Crispy Roll 
+        category: *maki  
+        restaurant: *oyummy
+        ingredients:
+            - *crabmeat
+            - *avocado
+            - *ginger
+            - *cucumber
+            - *seaweed
+
+    - !!models.MenuItem 
+        name: Tamago Roll 
+        category: *maki  
+        restaurant: *oyummy
+        ingredients:
+            - *egg
+
+    - !!models.MenuItem 
+        name: Tobiko Roll
+        category: *maki  
+        restaurant: *oyummy
+        ingredients:
+            - *fisheggs
+
+    - !!models.MenuItem 
+        name: Cucumber & Avocado Roll 
+        category: *maki  
+        restaurant: *oyummy
+        ingredients:
+            - *cucumber
+            - *avocado
+
+    - !!models.MenuItem 
+        name: Salmon Roll
+        category: *specialroll
+        restaurant: *oyummy
+        ingredients:
+            - *salmon
+
+
+#Menu Items of Sakura Restaurant
+    - !!models.MenuItem
+        name: Yam Tempura Roll
+        category: *specialroll
+        restaurant: *sakura
+        ingredients:
+            - *potato
+            - *tempura
+            - *avocado
+            - *cucumber
+
+    - !!models.MenuItem
+        name: Tempura California Roll
+        category: *specialroll
+        restaurant: *sakura
+        ingredients:
+            - *crabmeat
+            - *avocado
+            - *cucumber
+            - *fisheggs
+
+    - !!models.MenuItem 
+        name: Vegetable Roll
+        category: *vegroll
+        restaurant: *sakura
+        ingredients:
+            - *kampyo
+            - *lettuce
+            - *carrot
+            - *cabbage
+            - *avocado
+            - *cucumber
+
+    - !!models.MenuItem 
+        name: Spicy Broccoli Roll
+        category: *vegroll
+        restaurant: *sakura
+        ingredients:
+            - *broccoli
+            - *avocado
+            - *cucumber
+
+    - !!models.MenuItem 
+        name: Alaska Roll
+        category: *specialroll
+        restaurant: *sakura
+        ingredients:
+            - *shrimp
+            - *salmon
+            - *avocado
+            - *cucumber
+
+    - !!models.MenuItem 
+        name: Dynamite Roll
+        category: *specialroll
+        restaurant: *sakura
+        ingredients:
+            - *shrimp
+            - *tempura
+            - *crabmeat
+            - *cucumber
+            - *fisheggs
+
+    - !!models.MenuItem 
+        name: California Chicken Roll
+        category: *specialroll
+        restaurant: *sakura
+        ingredients:
+            - *chicken
+            - *crabmeat
+            - *avocado
+            - *cucumber
+
+    - !!models.MenuItem 
+        name: Red Bull
+        category: *specialroll
+        restaurant: *sakura
+        ingredients:
+            - *beef
+            - *cucumber
+            - *avocado
+
+    - !!models.MenuItem 
+        name: Philadelphia Roll
+        category: *specialroll
+        restaurant: *sakura
+        ingredients:
+            - *salmon
+            - *creamcheese
+            - *cucumber
+            - *avocado
+            - *crabmeat
+
+    - !!models.MenuItem 
+        name: Sun Rise Roll
+        category: *specialroll
+        restaurant: *sakura
+        ingredients:
+            - *salmon
+            - *creamcheese
+            - *cucumber
+            - *avocado
+            - *crabmeat
+
+    - !!models.MenuItem 
+        name: Uzumaki Roll
+        category: *specialroll
+        restaurant: *sakura
+        ingredients:
+            - *tuna
+            - *avocado
+            - *creamcheese
+            - *cucumber
+            - *crabmeat
+            - *fisheggs
+
+    - !!models.MenuItem 
+        name: Too Much Love Roll
+        category: *specialroll
+        restaurant: *sakura
+        ingredients:
+            - *salmon
+            - *avocado
+            - *cucumber
+            - *crabmeat
+            - *fisheggs
+            - *greenonion
+
+    - !!models.MenuItem 
+        name: Caterpillar
+        category: *specialroll
+        restaurant: *sakura
+        ingredients:
+            - *tuna
+            - *avocado
+            - *fisheggs
+
+    - !!models.MenuItem 
+        name: Green Draggon Roll
+        category: *specialroll
+        restaurant: *sakura
+        ingredients:
+            - *tempura
+            - *shrimp
+            - *avocado
+            - *cucumber
+            - *crabmeat
+
+    - !!models.MenuItem 
+        name: Rainbow Roll
+        category: *specialroll
+        restaurant: *sakura
+        ingredients:
+            - *crabmeat
+            - *avocado
+            - *cucumber
+            - *fisheggs
+            - *salmon
+            - *tuna
+
+    - !!models.MenuItem 
+        name: Red Dragon Roll
+        category: *specialroll
+        restaurant: *sakura
+        ingredients:
+            - *shrimp
+            - *tempura
+            - *crabmeat
+            - *avocado
+            - *cucumber
+            - *salmon
+
+    - !!models.MenuItem 
+        name: Spicy Golden Roll
+        category: *specialroll
+        restaurant: *sakura
+        ingredients:
+            - *shrimp
+            - *tempura
+            - *crabmeat
+            - *cucumber
+            - *avocado
+            - *salmon
+
+    - !!models.MenuItem 
+        name: Kamikaze Roll
+        category: *specialroll
+        restaurant: *sakura
+        ingredients:
+            - *shrimp
+            - *tempura
+            - *avocado
+            - *eel
+
+    - !!models.MenuItem 
+        name: Twin Shrimp Roll
+        category: *specialroll
+        restaurant: *sakura
+        ingredients:
+            - *shrimp
+            - *tempura
+            - *crabmeat
+            - *avocado
+            - *cucumber
+
+    - !!models.MenuItem 
+        name: Black Dragon Roll
+        category: *specialroll
+        restaurant: *sakura
+        ingredients:
+            - *shrimp
+            - *tempura
+            - *avocado
+            - *cucumber
+            - *crabmeat
+            - *eel
+
+    - !!models.MenuItem 
+        name: Spider Roll
+        category: *specialroll
+        restaurant: *sakura
+        ingredients:
+            - *crabmeat
+            - *avocado
+            - *cucumber
+            - *fisheggs
+
+    - !!models.MenuItem 
+        name: Legend Dragon Roll
+        category: *specialroll
+        restaurant: *sakura
+        ingredients:
+            - *shrimp
+            - *tempura
+            - *crabmeat
+            - *avocado
+            - *cucumber
+            - *eel
+
+    - !!models.MenuItem 
+        name: Kappa Maki Hand Roll
+        category: *handroll
+        restaurant: *sakura
+        ingredients:
+            - *cucumber
+
+    - !!models.MenuItem 
+        name: Kappa Maki Roll
+        category: *maki
+        restaurant: *sakura
+        ingredients:
+            - *cucumber
+
+    - !!models.MenuItem 
+        name: Oshinko Maki Hand Roll
+        category: *handroll
+        restaurant: *sakura
+        ingredients:
+            - *radish
+
+    - !!models.MenuItem 
+        name: Oshinko Maki Roll
+        category: *maki
+        restaurant: *sakura
+        ingredients:
+            - *radish
+
+    - !!models.MenuItem 
+        name: Shitake Maki Hand Roll
+        category: *handroll
+        restaurant: *sakura
+        ingredients:
+            - *mushrooms
+
+    - !!models.MenuItem 
+        name: Shitake Maki Roll
+        category: *handroll
+        restaurant: *sakura
+        ingredients:
+            - *mushrooms
+
+    - !!models.MenuItem 
+        name: Avocado Roll Hand Roll
+        category: *handroll
+        restaurant: *sakura
+        ingredients:
+            - *avocado
+
+    - !!models.MenuItem 
+        name: Avocado Roll
+        category: *maki
+        restaurant: *sakura
+        ingredients:
+            - *avocado
+
+    - !!models.MenuItem 
+        name: AvoQ Roll Hand Roll
+        category: *handroll
+        restaurant: *sakura
+        ingredients:
+            - *avocado
+            - *cucumber
+
+
+    - !!models.MenuItem 
+        name: AvoQ Roll
+        category: *maki
+        restaurant: *sakura
+        ingredients:
+            - *avocado
+            - *cucumber
+
+    - !!models.MenuItem 
+        name: Kani Maki Roll
+        category: *maki
+        restaurant: *sakura
+        ingredients:
+            - *crabmeat
+
+    - !!models.MenuItem 
+        name: Tamago Maki Roll
+        category: *maki
+        restaurant: *sakura
+        ingredients:
+            - *egg
+
+
+    - !!models.MenuItem 
+        name: California Roll Hand Roll
+        category: *handroll
+        restaurant: *sakura
+        ingredients:
+            - *crabmeat
+            - *cucumber
+            - *avocado
+            - *fisheggs
+
+    - !!models.MenuItem 
+        name: California Roll
+        category: *maki
+        restaurant: *sakura
+        ingredients:
+            - *crabmeat
+            - *cucumber
+            - *avocado
+            - *fisheggs
+
+    - !!models.MenuItem 
+        name: Salmon Roll Hand Roll
+        category: *handroll
+        restaurant: *sakura
+        ingredients:
+            - *salmon
+
+    - !!models.MenuItem 
+        name: Salmon Roll
+        category: *maki
+        restaurant: *sakura
+        ingredients:
+            - *salmon
+
+    - !!models.MenuItem 
+        name: Spicy Salmon Hand Roll
+        category: *handroll
+        restaurant: *sakura
+        ingredients:
+            - *salmon
+
+    - !!models.MenuItem 
+        name: Tekka Maki Hand Roll
+        category: *handroll
+        restaurant: *sakura
+        ingredients:
+            - *tuna
+
+    - !!models.MenuItem 
+        name: Tekka Maki Roll
+        category: *maki
+        restaurant: *sakura
+        ingredients:
+            - *tuna
+
+    - !!models.MenuItem 
+        name: Negi Saba Maki Hand Roll
+        category: *handroll
+        restaurant: *sakura
+        ingredients:
+            - *greenonion
+            - *mackerel
+
+    - !!models.MenuItem 
+        name: Negi Saba Maki Roll
+        category: *maki
+        restaurant: *sakura
+        ingredients:
+            - *greenonion
+            - *mackerel
+
+
+    - !!models.MenuItem 
+        name: Salmon Skin Roll Hand Roll
+        category: *handroll
+        restaurant: *sakura
+        ingredients:
+            - *salmon
+            - *avocado
+            - *cucumber
+
+    - !!models.MenuItem 
+        name: Salmon Skin Roll
+        category: *maki
+        restaurant: *sakura
+        ingredients:
+            - *salmon
+            - *avocado
+            - *cucumber
+
+    - !!models.MenuItem 
+        name: Spicy Scallop Roll Hand Roll
+        category: *handroll
+        restaurant: *sakura
+        ingredients:
+            - *scallop
+
+    - !!models.MenuItem 
+        name: Spicy Scallop Roll
+        category: *maki
+        restaurant: *sakura
+        ingredients:
+            - *scallop
+
+    - !!models.MenuItem 
+        name: Spicy Tuna Roll Hand Roll
+        category: *handroll
+        restaurant: *sakura
+        ingredients:
+            - *tuna
+
+    - !!models.MenuItem 
+        name: Spicy Tuna Roll
+        category: *maki
+        restaurant: *sakura
+        ingredients:
+            - *tuna
+
+    - !!models.MenuItem 
+        name: Unagi Maki Hand Roll
+        category: *handroll
+        restaurant: *sakura
+        ingredients:
+            - *eel
+            - *avocado
+            - *cucumber
+
+    - !!models.MenuItem 
+        name: Unagi Maki Roll
+        category: *maki
+        restaurant: *sakura
+        ingredients:
+            - *eel
+            - *avocado
+            - *cucumber
+
+    - !!models.MenuItem 
+        name: Negi Hamachi Hand Roll
+        category: *handroll
+        restaurant: *sakura
+        ingredients:
+            - *greenonion
+            - *yellowtail
+
+    - !!models.MenuItem 
+        name: Negi Hamachi Roll
+        category: *maki
+        restaurant: *sakura
+        ingredients:
+            - *greenonion
+            - *yellowtail
+
+    - !!models.MenuItem 
+        name: Negi Toro Maki Hand Roll
+        category: *handroll
+        restaurant: *sakura
+        ingredients:
+            - *greenonion
+            - *tuna
+
+    - !!models.MenuItem 
+        name: Negi Toro Maki Roll
+        category: *maki
+        restaurant: *sakura
+        ingredients:
+            - *greenonion
+            - *tuna
+
+    - !!models.MenuItem 
+        name: Futomaki Roll
+        category: *maki
+        restaurant: *sakura
+        ingredients:
+            - *mushrooms
+            - *radish
+            - *egg
+            - *cucumber
+            - *crabmeat
+
+#Menu Items of Watami Restaurant
+    - !!models.MenuItem 
+        name: California Roll
+        category: *specialroll
+        restaurant: *watami
+        ingredients:
+            - *crabmeat
+            - *avocado
+            - *cucumber
+
+    - !!models.MenuItem 
+        name: Spicy Salmon Roll
+        category: *specialroll
+        restaurant: *watami
+        ingredients:
+            - *salmon
+
+    - !!models.MenuItem 
+        name: Spicy Tuna Roll
+        category: *specialroll
+        restaurant: *watami
+        ingredients:
+            - *tuna
+
+    - !!models.MenuItem 
+        name: Philly Roll
+        category: *specialroll
+        restaurant: *watami
+        ingredients:
+            - *creamcheese
+            - *salmon
+            - *avocado
+
+    - !!models.MenuItem 
+        name: Teriyaki Chicken Roll
+        category: *specialroll
+        restaurant: *watami
+        ingredients:
+            - *teriyaki
+            - *chicken
+            - *cucumber
+
+    - !!models.MenuItem 
+        name: Teriyaki Beef Roll
+        category: *specialroll
+        restaurant: *watami
+        ingredients:
+            - *teriyaki
+            - *beef
+            - *cucumber
+
+    - !!models.MenuItem 
+        name: Tempura Crab Roll
+        category: *specialroll
+        restaurant: *watami
+        ingredients:
+            - *crabmeat
+
+    - !!models.MenuItem 
+        name: Salmon Salad Roll
+        category: *specialroll
+        restaurant: *watami
+        ingredients:
+            - *crabmeat
+            - *avocado
+            - *fisheggs
+            - *salmon
+            - *cucumber
+
+    - !!models.MenuItem 
+        name: Ginger Wasabi Roll
+        category: *specialroll
+        restaurant: *watami
+        ingredients:
+            - *ginger
+            - *salmon
+
+    - !!models.MenuItem 
+        name: Spicy Scallop Roll
+        category: *specialroll
+        restaurant: *watami
+        ingredients:
+            - *scallop
+
+    - !!models.MenuItem 
+        name: Dynamite Roll
+        category: *specialroll
+        restaurant: *watami
+        ingredients:
+            - *shrimp
+            - *fisheggs
+            - *avocado
+            - *mayonnaise
+
+    - !!models.MenuItem 
+        name: Rainbow Roll
+        category: *specialroll
+        restaurant: *watami
+        ingredients:
+            - *crabmeat
+            - *avocado
+            - *cucumber
+            - *snapper
+            - *yellowtail
+            - *tuna
+
+    - !!models.MenuItem 
+        name: Spider Roll
+        category: *specialroll
+        restaurant: *watami
+        ingredients:
+            - *crabmeat
+            - *fisheggs
+            - *mayonnaise
+
+    - !!models.MenuItem 
+        name: Salmon Crunch Roll
+        category: *specialroll
+        restaurant: *watami
+        ingredients:
+            - *crabmeat
+            - *salmon
+
+    - !!models.MenuItem 
+        name: Red Dragon Roll
+        category: *specialroll
+        restaurant: *watami
+        ingredients:
+            - *salmon
+            - *shrimp
+            - *fisheggs
+            - *avocado
+            - *mayonnaise
+
+    - !!models.MenuItem 
+        name: Green Dragon Roll
+        category: *specialroll
+        restaurant: *watami
+        ingredients:
+            - *avocado
+            - *shrimp
+            - *fisheggs
+            - *mayonnaise
+
+    - !!models.MenuItem 
+        name: Black Dragon Roll
+        category: *specialroll
+        restaurant: *watami
+        ingredients:
+            - *eel
+            - *shrimp
+            - *fisheggs
+            - *avocado
+            - *mayonnaise
+
+    - !!models.MenuItem 
+        name: Kansai Sushi Roll
+        category: *specialroll
+        restaurant: *watami
+        ingredients:
+            - *eel
+            - *creamcheese
+            - *avocado
+            - *tuna
+
+    - !!models.MenuItem 
+        name: Las Vegas Roll
+        category: *specialroll
+        restaurant: *watami
+        ingredients:
+            - *tuna
+            - *snapper
+            - *creamcheese
+            - *avocado
+            - *crabmeat
+
+    - !!models.MenuItem 
+        name: Rock Star Roll
+        category: *specialroll
+        restaurant: *watami
+        ingredients:
+            - *tuna
+            - *avocado
+            - *shrimp
+            - *fisheggs
+            - *mayonnaise
+
+    - !!models.MenuItem 
+        name: Summer Roll
+        category: *specialroll
+        restaurant: *watami
+        ingredients:
+            - *salmon
+
+    - !!models.MenuItem 
+        name: Winter Roll
+        category: *specialroll
+        restaurant: *watami
+        ingredients:
+            - *mango
+            - *shrimp
+            - *fisheggs
+            - *avocado
+            - *mayonnaise
+
+    - !!models.MenuItem 
+        name: Tex Mex Roll
+        category: *specialroll
+        restaurant: *watami
+        ingredients:
+            - *crabmeat
+            - *avocado
+            - *cucumber
+            - *tuna
+            - *tomatoes
+            - *fisheggs
+
+    - !!models.MenuItem 
+        name: Baked Scallop Roll
+        category: *specialroll
+        restaurant: *watami
+        ingredients:
+            - *crabmeat
+            - *avocado
+            - *cucumber
+            - *scallop
+            - *mushrooms
+
+    - !!models.MenuItem 
+        name: Ice & Fire Roll
+        category: *specialroll
+        restaurant: *watami
+        ingredients:
+            - *snapper
+            - *shrimp
+            - *crabmeat
+
+    - !!models.MenuItem 
+        name: Watami on King
+        category: *specialroll
+        restaurant: *watami
+        ingredients:
+            - *crabmeat
+            - *avocado
+            - *cucumber
+            - *mayonnaise
+
+    - !!models.MenuItem 
+        name: Cucumber Roll
+        category: *vegroll
+        restaurant: *watami
+        ingredients:
+            - *cucumber
+
+    - !!models.MenuItem 
+        name: Avocado Roll
+        category: *vegroll
+        restaurant: *watami
+        ingredients:
+            - *avocado
+
+    - !!models.MenuItem 
+        name: Mushroom Roll
+        category: *vegroll
+        restaurant: *watami
+        ingredients:
+            - *mushrooms
+
+    - !!models.MenuItem 
+        name: Avocado Cucumber Roll
+        category: *vegroll
+        restaurant: *watami
+        ingredients:
+            - *avocado
+            - *cucumber
+
+    - !!models.MenuItem 
+        name: Veggie Futomaki Roll
+        category: *vegroll
+        restaurant: *watami
+        ingredients:
+            - *mushrooms
+            - *cucumber
+            - *spinach
+            - *egg
+            - *codfish
+
+    - !!models.MenuItem 
+        name: Sweet Potato Roll
+        category: *vegroll
+        restaurant: *watami
+        ingredients:
+            - *potato
+
+    - !!models.MenuItem 
+        name: Mango Avocado Roll
+        category: *vegroll
+        restaurant: *watami
+        ingredients:
+            - *mango
+            - *avocado
+
+
+#Menu Items of Kinkaku Restaurant
+    # Sushi
+
+    - !!models.MenuItem 
+        name: Salmon
+        category: *sushi
+        restaurant: *kinkaku
+        ingredients:
+            - *salmon
+
+    - !!models.MenuItem 
+        name: Red Snapper
+        category: *sushi
+        restaurant: *kinkaku
+        ingredients:
+            - *snapper
+
+    - !!models.MenuItem 
+        name: White Tuna
+        category: *sushi
+        restaurant: *kinkaku
+        ingredients:
+            - *tuna
+
+    - !!models.MenuItem 
+        name: Surf Clam
+        category: *sushi
+        restaurant: *kinkaku
+        ingredients:
+            - *surfclam
+
+    - !!models.MenuItem 
+        name: Shrimp
+        category: *sushi
+        restaurant: *kinkaku
+        ingredients:
+            - *shrimp
+
+    - !!models.MenuItem 
+        name: Crabmeat
+        category: *sushi
+        restaurant: *kinkaku
+        ingredients:
+            - *crabmeat
+
+    - !!models.MenuItem 
+        name: Avocado
+        category: *sushi
+        restaurant: *kinkaku
+        ingredients:
+            - *avocado
+
+    # Roll
+
+    - !!models.MenuItem 
+        name: Shrimp Tempura Roll
+        category: *specialroll
+        restaurant: *kinkaku
+        ingredients:
+            - *shrimp
+            - *tempura
+
+    - !!models.MenuItem 
+        name: Spicy Shrimp Tempura Roll
+        category: *specialroll
+        restaurant: *kinkaku
+        ingredients:
+            - *shrimp
+            - *tempura
+
+    - !!models.MenuItem 
+        name: California Roll
+        category: *specialroll
+        restaurant: *kinkaku
+        ingredients:
+            - *crabmeat
+            - *avocado
+            - *cucumber
+
+    - !!models.MenuItem 
+        name: Spicy Salmon Roll
+        category: *specialroll
+        restaurant: *kinkaku
+        ingredients:
+            - *salmon
+
+    - !!models.MenuItem 
+        name: Spicy Crab Roll
+        category: *specialroll
+        restaurant: *kinkaku
+        ingredients:
+            - *crabmeat
+
+    - !!models.MenuItem 
+        name: Spicy Tuna Roll
+        category: *specialroll
+        restaurant: *kinkaku
+        ingredients:
+            - *tuna
+
+    - !!models.MenuItem 
+        name: Crabmeat Tempura Roll
+        category: *specialroll
+        restaurant: *kinkaku
+        ingredients:
+            - *crabmeat
+            - *tempura
+
+    - !!models.MenuItem 
+        name: Mango Salmon Roll
+        category: *specialroll
+        restaurant: *kinkaku
+        ingredients:
+            - *mango
+            - *salmon
+
+    - !!models.MenuItem 
+        name: Mango Shrimp Roll
+        category: *specialroll
+        restaurant: *kinkaku
+        ingredients:
+            - *mango
+            - *shrimp
+
+    - !!models.MenuItem 
+        name: Mango Avocado Roll
+        category: *vegroll
+        restaurant: *kinkaku
+        ingredients:
+            - *mango
+            - *avocado
+
+    - !!models.MenuItem 
+        name: Eel Avocado Roll
+        category: *specialroll
+        restaurant: *kinkaku
+        ingredients:
+            - *eel
+            - *avocado
+
+    - !!models.MenuItem 
+        name: Cheese Eel Roll
+        category: *specialroll
+        restaurant: *kinkaku
+        ingredients:
+            - *creamcheese
+            - *eel
+
+    - !!models.MenuItem 
+        name: Cheese Mango Roll
+        category: *vegroll
+        restaurant: *kinkaku
+        ingredients:
+            - *creamcheese
+            - *mango
+
+    - !!models.MenuItem 
+        name: Cheese Strawberry Roll
+        category: *vegroll
+        restaurant: *kinkaku
+        ingredients:
+            - *cheese
+            - *strawberry
+
+    - !!models.MenuItem 
+        name: Avocado Cucumber Roll
+        category: *vegroll
+        restaurant: *kinkaku
+        ingredients:
+            - *avocado
+            - *cucumber
+
+    - !!models.MenuItem 
+        name: Yam Roll
+        category: *vegroll
+        restaurant: *kinkaku
+        ingredients:
+            - *potato
+            - *mayonnaise
+
+    - !!models.MenuItem 
+        name: Asparagus Roll
+        category: *vegroll
+        restaurant: *kinkaku
+        ingredients:
+            - *asparagus
+
+    - !!models.MenuItem 
+        name: Spicy Crisp Roll
+        category: *specialroll
+        restaurant: *kinkaku
+        ingredients:
+            - *mayonnaise
+            - *tempura
+
+    - !!models.MenuItem 
+        name: Big Hand Roll
+        category: *handroll
+        restaurant: *kinkaku
+        ingredients:
+            - *eel
+            - *avocado
+            - *fisheggs
+
+    - !!models.MenuItem 
+        name: California Hand Roll
+        category: *handroll
+        restaurant: *kinkaku
+        ingredients:
+            - *crabmeat
+            - *avocado
+            - *cucumber
+
+    - !!models.MenuItem 
+        name: Avocado Hand Roll
+        category: *handroll
+        restaurant: *kinkaku
+        ingredients:
+            - *avocado
+
+    - !!models.MenuItem 
+        name: Shrimp Tempura Hand Roll
+        category: *handroll
+        restaurant: *kinkaku
+        ingredients:
+            - *shrimp
+            - *tempura
+
+    - !!models.MenuItem 
+        name: Spicy Shrimp Tempura Hand Roll
+        category: *handroll
+        restaurant: *kinkaku
+        ingredients:
+            - *shrimp
+            - *tempura
+
+    - !!models.MenuItem 
+        name: Spicy Salmon Hand Roll
+        category: *handroll
+        restaurant: *kinkaku
+        ingredients:
+            - *salmon
+
+    - !!models.MenuItem 
+        name: Spicy Crabmeat Hand Roll
+        category: *handroll
+        restaurant: *kinkaku
+        ingredients:
+            - *crabmeat
+
+    - !!models.MenuItem 
+        name: Crabmeat Hand Roll
+        category: *handroll
+        restaurant: *kinkaku
+        ingredients:
+            - *crabmeat
+
+    - !!models.MenuItem 
+        name: Cucumber Hand Roll
+        category: *handroll
+        restaurant: *kinkaku
+        ingredients:
+            - *cucumber
+
+#Menu Items of Itamae Restaurant
+    # Maki Roll
+
+    - !!models.MenuItem 
+        name: Teriyaki Chicken Avocado Roll
+        category: *maki
+        restaurant: *itamae
+        ingredients:
+            - *teriyaki
+            - *chicken
+            - *avocado
+
+    - !!models.MenuItem 
+        name: Spicy Crisp White Tuna Roll
+        category: *maki
+        restaurant: *itamae
+        ingredients:
+            - *tempura
+            - *mayonnaise
+            - *tuna
+
+    - !!models.MenuItem 
+        name: Spicy Salmon Roll
+        category: *maki
+        restaurant: *itamae
+        ingredients:
+            - *salmon
+
+    - !!models.MenuItem 
+        name: Salmon Avocado Cucumber Roll
+        category: *maki
+        restaurant: *itamae
+        ingredients:
+            - *salmon
+            - *avocado
+            - *cucumber
+
+    - !!models.MenuItem 
+        name: Spicy Crisp Salmon Roll
+        category: *maki
+        restaurant: *itamae
+        ingredients:
+            - *tempura
+            - *mayonnaise
+            - *salmon
+
+    - !!models.MenuItem 
+        name: Smoked Salmon Roll
+        category: *maki
+        restaurant: *itamae
+        ingredients:
+            - *salmon
+
+    - !!models.MenuItem 
+        name: Spicy Tuna Roll
+        category: *maki
+        restaurant: *itamae
+        ingredients:
+            - *tuna
+
+    - !!models.MenuItem 
+        name: Spicy Crisp Tuna Roll
+        category: *maki
+        restaurant: *itamae
+        ingredients:
+            - *tempura
+            - *mayonnaise
+            - *tuna
+
+    - !!models.MenuItem 
+        name: California Roll
+        category: *maki
+        restaurant: *itamae
+        ingredients:
+            - *crabmeat
+            - *avocado
+            - *cucumber
+
+    - !!models.MenuItem 
+        name: Spicy Shrimp Roll
+        category: *maki
+        restaurant: *itamae
+        ingredients:
+            - *shrimp
+
+    - !!models.MenuItem 
+        name: BBQ Eel Avocado Roll
+        category: *maki
+        restaurant: *itamae
+        ingredients:
+            - *eel
+            - *avocado
+
+    - !!models.MenuItem 
+        name: Tempura Crab Roll
+        category: *maki
+        restaurant: *itamae
+        ingredients:
+            - *tempura
+            - *crabmeat
+
+    - !!models.MenuItem 
+        name: Cucumber Roll
+        category: *maki
+        restaurant: *itamae
+        ingredients:
+            - *cucumber
+
+    - !!models.MenuItem 
+        name: Avocado Roll
+        category: *maki
+        restaurant: *itamae
+        ingredients:
+            - *avocado
+
+    - !!models.MenuItem 
+        name: Avocado Cucumber Roll
+        category: *maki
+        restaurant: *itamae
+        ingredients:
+            - *avocado
+            - *cucumber
+
+    - !!models.MenuItem 
+        name: Tempura Yam Roll
+        category: *maki
+        restaurant: *itamae
+        ingredients:
+            - *tempura
+            - *potato
+
+    - !!models.MenuItem 
+        name: Spicy Crisp Roll
+        category: *maki
+        restaurant: *itamae
+        ingredients:
+            - *tempura
+            - *mayonnaise
+
+    - !!models.MenuItem 
+        name: Mango Banana Roll
+        category: *maki
+        restaurant: *itamae
+        ingredients:
+            - *mango
+            - *banana
+
+    # Special Roll
+
+    - !!models.MenuItem 
+        name: Rainbow Roll
+        category: *specialroll
+        restaurant: *itamae
+        ingredients:
+            - *cucumber
+            - *avocado
+            - *crabmeat
+            - *snapper
+            - *salmon
+
+    - !!models.MenuItem 
+        name: Spicy Dragon Roll
+        category: *specialroll
+        restaurant: *itamae
+        ingredients:
+            - *tempura
+            - *shrimp
+            - *avocado
+            - *crabmeat
+
+    - !!models.MenuItem 
+        name: Red Dragon Roll
+        category: *specialroll
+        restaurant: *itamae
+        ingredients:
+            - *tempura
+            - *shrimp
+            - *avocado
+            - *fisheggs
+
+    - !!models.MenuItem 
+        name: Gold Dragon Roll
+        category: *specialroll
+        restaurant: *itamae
+        ingredients:
+            - *tempura
+            - *shrimp
+            - *avocado
+            - *salmon
+
+    - !!models.MenuItem 
+        name: Green Dragon Roll
+        category: *specialroll
+        restaurant: *itamae
+        ingredients:
+            - *tempura
+            - *shrimp
+            - *avocado
+
+    - !!models.MenuItem 
+        name: Spider Roll
+        category: *specialroll
+        restaurant: *itamae
+        ingredients:
+            - *crabmeat
+
+    - !!models.MenuItem 
+        name: Thai Roll
+        category: *specialroll
+        restaurant: *itamae
+        ingredients:
+            - *radish
+            - *avocado
+            - *cucumber
+            - *crabmeat
+
+    - !!models.MenuItem 
+        name: Itamae Roll
+        category: *specialroll
+        restaurant: *itamae
+        ingredients:
+            - *salmon
+            - *cucumber
+            - *fisheggs
+            - *creamcheese
+            - *avocado
+            - *shrimp
+
+    - !!models.MenuItem 
+        name: Fire Dragon Roll
+        category: *specialroll
+        restaurant: *itamae
+        ingredients:
+            - *crabmeat
+            - *salmon
+
+    # Hand Roll
+
+    - !!models.MenuItem 
+        name: Spicy Crispy Salmon Hand Roll
+        category: *handroll
+        restaurant: *itamae
+        ingredients:
+            - *tempura
+            - *mayonnaise
+            - *salmon
+
+    - !!models.MenuItem 
+        name: Spicy Crispy White Tuna Hand Roll
+        category: *handroll
+        restaurant: *itamae
+        ingredients:
+           - *tempura
+           - *mayonnaise
+           - *tuna
+
+    - !!models.MenuItem 
+        name: Spicy Crisp Tuna Hand Roll
+        category: *handroll
+        restaurant: *itamae
+        ingredients:
+            - *tempura
+            - *mayonnaise
+            - *tuna
+
+    - !!models.MenuItem 
+        name: BBQ Eel Cucumber Hand Roll
+        category: *handroll
+        restaurant: *itamae
+        ingredients:
+            - *eel
+            - *cucumber
+
+    - !!models.MenuItem 
+        name: California Hand Roll
+        category: *handroll
+        restaurant: *itamae
+        ingredients:
+            - *crabmeat
+            - *avocado
+            - *cucumber
+
+    - !!models.MenuItem 
+        name: Avocado Cucumber Hand Roll
+        category: *handroll
+        restaurant: *itamae
+        ingredients:
+            - *avocado
+            - *cucumber
+
+    - !!models.MenuItem 
+        name: Mango Cucumber Hand Roll
+        category: *handroll
+        restaurant: *itamae
+        ingredients:
+            - *mango
+            - *cucumber
+
+    - !!models.MenuItem 
+        name: Crab Tobiko Hand Roll
+        category: *handroll
+        restaurant: *itamae
+        ingredients:
+            - *crabmeat
+            - *fisheggs
+
+    - !!models.MenuItem 
+        name: Salmon Cucumber Hand Roll
+        category: *handroll
+        restaurant: *itamae
+        ingredients:
+            - *salmon
+            - *cucumber
+
+#Menu Items of Sushi99 Restaurant
+    # Soup
+    - !!models.MenuItem 
+        name: Miso Soup
+        category: *soupsalad
+        restaurant: *sushi99
+
+    - !!models.MenuItem 
+        name: Spicy & Sour Soup
+        category: *soupsalad
+        restaurant: *sushi99
+
+    - !!models.MenuItem 
+        name: Wanton Soup
+        category: *soupsalad
+        restaurant: *sushi99
+
+    #  Salad
+    - !!models.MenuItem 
+        name: Green Salad
+        category: *soupsalad
+        restaurant: *sushi99
+
+    - !!models.MenuItem 
+        name: Avocado Salad
+        category: *soupsalad
+        restaurant: *sushi99
+
+    - !!models.MenuItem 
+        name: California Salad
+        category: *soupsalad
+        restaurant: *sushi99
+
+    - !!models.MenuItem 
+        name: Green Seaweed Salad
+        category: *soupsalad
+        restaurant: *sushi99
+
+    - !!models.MenuItem 
+        name: Sunomono Salad
+        category: *soupsalad
+        restaurant: *sushi99
+
+    - !!models.MenuItem 
+        name: Wakame Salad
+        category: *soupsalad
+        restaurant: *sushi99
+
+    # Sashimi
+    - !!models.MenuItem 
+        name: Red Snapper
+        category: *sashimi
+        restaurant: *sushi99
+        ingredients:
+          - *snapper
+
+    - !!models.MenuItem 
+        name: White Tuna
+        category: *sashimi
+        restaurant: *sushi99
+        ingredients:
+          - *tuna
+
+    - !!models.MenuItem 
+        name: Salmon
+        category: *sashimi
+        restaurant: *sushi99
+        ingredients:
+          - *salmon
+
+    - !!models.MenuItem 
+        name: Mackerel
+        category: *sashimi
+        restaurant: *sushi99
+        ingredients:
+          - *mackerel
+
+    - !!models.MenuItem 
+        name: Egg
+        category: *sashimi
+        restaurant: *sushi99
+        ingredients:
+          - *egg
+
+    - !!models.MenuItem 
+        name: Crab Cake
+        category: *sashimi
+        restaurant: *sushi99
+        ingredients:
+          - *crabmeat
+
+    - !!models.MenuItem 
+        name: Surf Clam
+        category: *sashimi
+        restaurant: *sushi99
+        ingredients:
+          - *surfclam
+
+    # Sushi
+    - !!models.MenuItem 
+        name: Red Snapper
+        category: *sushi
+        restaurant: *sushi99
+        ingredients:
+          - *snapper
+
+    - !!models.MenuItem 
+        name: White Tuna
+        category: *sushi
+        restaurant: *sushi99
+        ingredients:
+          - *tuna
+
+    - !!models.MenuItem 
+        name: Tuna
+        category: *sushi
+        restaurant: *sushi99
+        ingredients:
+          - *tuna
+
+    - !!models.MenuItem 
+        name: Salmon
+        category: *sushi
+        restaurant: *sushi99
+        ingredients:
+          - *mackerel
+
+    - !!models.MenuItem 
+        name: Eel
+        category: *sushi
+        restaurant: *sushi99
+        ingredients:
+          - *eel
+
+    - !!models.MenuItem 
+        name: Egg
+        category: *sushi
+        restaurant: *sushi99
+        ingredients:
+          - *egg
+
+    - !!models.MenuItem 
+        name: Octopus
+        category: *sushi
+        restaurant: *sushi99
+        ingredients:
+          - *octopus
+
+    - !!models.MenuItem 
+        name: Shrimp
+        category: *sushi
+        restaurant: *sushi99
+        ingredients:
+          - *shrimp
+
+    - !!models.MenuItem 
+        name: Spicy White Tuna
+        category: *sushi
+        restaurant: *sushi99
+        ingredients:
+          - *tuna
+
+    - !!models.MenuItem 
+        name: Crab Cake
+        category: *sushi
+        restaurant: *sushi99
+        ingredients:
+          - *crabmeat
+
+    - !!models.MenuItem 
+        name: Surf Clam
+        category: *sushi
+        restaurant: *sushi99
+        ingredients:
+          - *surfclam
+
+    - !!models.MenuItem 
+        name: Tofu
+        category: *sushi
+        restaurant: *sushi99
+        ingredients:
+          - *tofu
+
+    - !!models.MenuItem 
+        name: Avocado
+        category: *sushi
+        restaurant: *sushi99
+        ingredients:
+          - *avocado
+
+    - !!models.MenuItem 
+        name: Spicy Salmon
+        category: *sushi
+        restaurant: *sushi99
+        ingredients:
+          - *salmon
+
+    - !!models.MenuItem 
+        name: Spicy Tuna
+        category: *sushi
+        restaurant: *sushi99
+        ingredients:
+          - *tuna
+
+    - !!models.MenuItem 
+        name: Crispy Sushi
+        category: *sushi
+        restaurant: *sushi99
+        ingredients:
+          - *tempura
+
+    # Sushi Pizza
+    - !!models.MenuItem 
+        name: Spicy Salmon
+        category: *sushipizza
+        restaurant: *sushi99
+        ingredients:
+          - *salmon
+          - *mayonnaise
+
+    - !!models.MenuItem 
+        name: Spicy Red Tuna
+        category: *sushipizza
+        restaurant: *sushi99
+        ingredients:
+          - *tuna
+          - *mayonnaise
+
+    - !!models.MenuItem 
+        name: Spicy White Tuna
+        category: *sushipizza
+        restaurant: *sushi99
+        ingredients:
+          - *tuna
+          - *mayonnaise
+
+    - !!models.MenuItem 
+        name: Spicy Crab Meat
+        category: *sushipizza
+        restaurant: *sushi99
+        ingredients:
+          - *crabmeat
+          - *mayonnaise
+
+    - !!models.MenuItem 
+        name: Eel
+        category: *sushipizza
+        restaurant: *sushi99
+        ingredients:
+          - *eel
+          - *mayonnaise
+
+    - !!models.MenuItem 
+        name: Vegetable
+        category: *sushipizza
+        restaurant: *sushi99
+        ingredients:
+          - *cucumber
+          - *avocado
+          - *mayonnaise
+
+    # Hand Roll
+    - !!models.MenuItem 
+        name: Spicy Salmon
+        category: *handroll
+        restaurant: *sushi99
+        ingredients:
+          - *avocado
+          - *cucumber
+          - *crabmeat
+          - *fisheggs
+
+    - !!models.MenuItem 
+        name: Cucumber
+        category: *handroll
+        restaurant: *sushi99
+        ingredients:
+          - *cucumber
+
+    - !!models.MenuItem 
+        name: Avocado
+        category: *handroll
+        restaurant: *sushi99
+        ingredients:
+          - *avocado
+
+    - !!models.MenuItem 
+        name: Eel
+        category: *handroll
+        restaurant: *sushi99
+        ingredients:
+          - *eel
+
+    - !!models.MenuItem 
+        name: Spicy Salmon
+        category: *handroll
+        restaurant: *sushi99
+        ingredients:
+          - *avocado
+
+    - !!models.MenuItem 
+        name: Vegetable
+        category: *handroll
+        restaurant: *sushi99
+        ingredients:
+          - *cucumber
+          - *avocado
+
+    - !!models.MenuItem 
+        name: Salmon
+        category: *handroll
+        restaurant: *sushi99
+        ingredients:
+          - *salmon
+
+    - !!models.MenuItem 
+        name: Crab
+        category: *handroll
+        restaurant: *sushi99
+        ingredients:
+          - *crabmeat
+
+    - !!models.MenuItem 
+        name: Tuna
+        category: *handroll
+        restaurant: *sushi99
+        ingredients:
+          - *tuna
+
+    - !!models.MenuItem 
+        name: Salmon Skin
+        category: *handroll
+        restaurant: *sushi99
+        ingredients:
+          - *salmon
+
+    - !!models.MenuItem 
+        name: Spicy Salmon Skin
+        category: *handroll
+        restaurant: *sushi99
+        ingredients:
+          - *salmon
+          - *mayonnaise
+
+    - !!models.MenuItem 
+        name: Spicy Salmon
+        category: *handroll
+        restaurant: *sushi99
+        ingredients:
+          - *salmon
+          - *mayonnaise
+
+    - !!models.MenuItem 
+        name: Spicy Tuna
+        category: *handroll
+        restaurant: *sushi99
+        ingredients:
+          - *tuna
+          - *mayonnaise
+
+    - !!models.MenuItem 
+        name: Spicy Crab
+        category: *handroll
+        restaurant: *sushi99
+        ingredients:
+          - *crabmeat
+          - *mayonnaise
+
+    - !!models.MenuItem 
+        name: Tempura Shrimp
+        category: *handroll
+        restaurant: *sushi99
+        ingredients:
+          - *shrimp
+          - *tempura
+
+    - !!models.MenuItem 
+        name: Spicy Tempura Shrimp
+        category: *handroll
+        restaurant: *sushi99
+        ingredients:
+          - *tempura
+          - *shrimp
+          - *mayonnaise
+
+    - !!models.MenuItem 
+        name: Spicy White Tuna
+        category: *handroll
+        restaurant: *sushi99
+        ingredients:
+          - *tuna
+          - *mayonnaise
+
+    # Maki
+    - !!models.MenuItem 
+        name: California Maki
+        category: *maki
+        restaurant: *sushi99
+        ingredients:
+          - *avocado
+          - *cucumber
+          - *crabmeat
+          - *fisheggs
+
+    - !!models.MenuItem 
+        name: Avocado & Cucumber Maki
+        category: *maki
+        restaurant: *sushi99
+        ingredients:
+          - *avocado
+          - *cucumber
+
+    - !!models.MenuItem 
+        name: Kappa Maki
+        category: *maki
+        restaurant: *sushi99
+        ingredients:
+          - *cucumber
+
+    - !!models.MenuItem 
+        name: Oshinko Maki
+        category: *maki
+        restaurant: *sushi99
+        ingredients:
+          - *radish
+
+    - !!models.MenuItem 
+        name: Vegi Maki
+        category: *vegroll
+        restaurant: *sushi99
+        ingredients:
+          - *radish
+          - *cucumber
+          - *avocado
+
+    - !!models.MenuItem 
+        name: Futo Maki
+        category: *maki
+        restaurant: *sushi99
+        ingredients:
+          - *kampyo
+          - *mushrooms
+          - *spinach
+          - *egg
+          - *crabmeat
+
+    - !!models.MenuItem 
+        name: Sake Maki
+        category: *maki
+        restaurant: *sushi99
+        ingredients:
+          - *salmon
+
+    - !!models.MenuItem 
+        name: Tekka Maki
+        category: *maki
+        restaurant: *sushi99
+        ingredients:
+          - *tuna
+
+    - !!models.MenuItem 
+        name: Kanikima Maki
+        category: *maki
+        restaurant: *sushi99
+        ingredients:
+          - *crabmeat
+
+    - !!models.MenuItem 
+        name: Tempura Yam Maki
+        category: *maki
+        restaurant: *sushi99
+        ingredients:
+          - *tempura
+          - *potato
+
+    - !!models.MenuItem 
+        name: Salmon Skin Maki
+        category: *maki
+        restaurant: *sushi99
+        ingredients:
+          - *salmon
+          - *cucumber
+
+    - !!models.MenuItem 
+        name: Spicy Salmon Skin Maki
+        category: *maki
+        restaurant: *sushi99
+        ingredients:
+          - *salmon
+          - *mayonnaise
+          - *cucumber
+
+    - !!models.MenuItem 
+        name: Spicy White Tuna Maki
+        category: *maki
+        restaurant: *sushi99
+        ingredients:
+          - *tuna
+          - *mayonnaise
+          - *avocado
+
+    - !!models.MenuItem 
+        name: Spicy Salmon Maki
+        category: *maki
+        restaurant: *sushi99
+        ingredients:
+          - *salmon
+          - *mayonnaise
+          - *avocado
+
+    - !!models.MenuItem 
+        name: Spicy Crab Maki
+        category: *maki
+        restaurant: *sushi99
+        ingredients:
+          - *crabmeat
+          - *mayonnaise
+          - *avocado
+
+    - !!models.MenuItem 
+        name: Spicy Crispy Maki
+        category: *maki
+        restaurant: *sushi99
+        ingredients:
+          - *tempura
+          - *mayonnaise
+          - *avocado
+
+    - !!models.MenuItem 
+        name: Unagi Maki
+        category: *maki
+        restaurant: *sushi99
+        ingredients:
+          - *eel
+          - *cucumber
+
+    - !!models.MenuItem 
+        name: Waterloo Maki
+        category: *maki
+        restaurant: *sushi99
+        ingredients:
+          - *tempura
+          - *squid
+          - *cucumber
+
+    - !!models.MenuItem 
+        name: Beef Teriyaki Maki
+        category: *maki
+        restaurant: *sushi99
+        ingredients:
+          - *beef
+          - *cucumber
+          - *teriyaki
+
+    - !!models.MenuItem 
+        name: Chicken Teriyaki Maki
+        category: *maki
+        restaurant: *sushi99
+        ingredients:
+          - *chicken
+          - *cucumber
+          - *teriyaki
+
+    - !!models.MenuItem 
+        name: Salmon & Avocado Maki
+        category: *maki
+        restaurant: *sushi99
+        ingredients:
+          - *salmon
+          - *avocado
+
+    - !!models.MenuItem 
+        name: Avocado Roll
+        category: *maki
+        restaurant: *sushi99
+        ingredients:
+          - *avocado
+
+    - !!models.MenuItem 
+        name: Spicy Tuna Roll
+        category: *maki
+        restaurant: *sushi99
+        ingredients:
+          - *tuna
+          - *avocado
+          - *mayonnaise
+
+    - !!models.MenuItem 
+        name: Toronto Roll
+        category: *maki
+        restaurant: *sushi99
+        ingredients:
+          - *banana
+          - *crabmeat
+          - *mayonnaise
+
+    # Special Rolls
+    - !!models.MenuItem 
+        name: Rainbow Whirl
+        category: *specialroll
+        restaurant: *sushi99
+        ingredients:
+          - *avocado
+          - *cucumber
+          - *crabmeat
+          - *fisheggs
+          - *tuna
+          - *salmon
+
+    - !!models.MenuItem 
+        name: Spider Roll
+        category: *specialroll
+        restaurant: *sushi99
+        ingredients:
+          - *crabmeat
+          - *cucumber
+          - *fisheggs
+          - *avocado
+
+    - !!models.MenuItem 
+        name: Hot Roll
+        category: *specialroll
+        restaurant: *sushi99
+        ingredients:
+          - *salmon
+          - *crabmeat
+          - *mayonnaise
+
+    - !!models.MenuItem 
+        name: Philadelphia Roll
+        category: *specialroll
+        restaurant: *sushi99
+        ingredients:
+          - *creamcheese
+          - *salmon
+          - *avocado
+
+    - !!models.MenuItem 
+        name: King Roll
+        category: *specialroll
+        restaurant: *sushi99
+        ingredients:
+          - *creamcheese
+          - *eel
+          - *avocado
+
+    - !!models.MenuItem 
+        name: Tempura Roll
+        category: *specialroll
+        restaurant: *sushi99
+        ingredients:
+          - *shrimp
+          - *avocado
+          - *cucumber
+          - *tempura
+          - *fisheggs
+
+    - !!models.MenuItem 
+        name: Green Dragon Roll
+        category: *specialroll
+        restaurant: *sushi99
+        ingredients:
+          - *tempura
+          - *shrimp
+          - *avocado
+          - *cucumber
+
+    - !!models.MenuItem 
+        name: Spicy Green Dragon Roll
+        category: *specialroll
+        restaurant: *sushi99
+        ingredients:
+          - *shrimp
+          - *tempura
+          - *fisheggs
+          - *crabmeat
+          - *avocado
+          - *cucumber
+
+    - !!models.MenuItem 
+        name: Golden Dragon Roll
+        category: *specialroll
+        restaurant: *sushi99
+        ingredients:
+          - *avocado
+          - *cucumber
+          - *fisheggs
+          - *crabmeat
+          - *tuna
+
+    - !!models.MenuItem 
+        name: Black Dragon Roll
+        category: *specialroll
+        restaurant: *sushi99
+        ingredients:
+          - *avocado
+          - *cucumber
+          - *fisheggs
+          - *crabmeat
+          - *eel
+
+    - !!models.MenuItem 
+        name: 99 Special Roll
+        category: *specialroll
+        restaurant: *sushi99
+        ingredients:
+          - *eel
+          - *salmon
+          - *avocado
+          - *mayonnaise
+
+    - !!models.MenuItem 
+        name: Dynamite Roll
+        category: *specialroll
+        restaurant: *sushi99
+        ingredients:
+          - *tempura
+          - *shrimp
+          - *fisheggs
+          - *avocado
+          - *cucumber
+          - *mayonnaise
+          - *crabmeat
+
+    - !!models.MenuItem 
+        name: Tobi Roll
+        category: *specialroll
+        restaurant: *sushi99
+        ingredients:
+          - *crabmeat
+          - *mayonnaise
+
+    - !!models.MenuItem 
+        name: Fire Dragon Roll
+        category: *specialroll
+        restaurant: *sushi99
+        ingredients:
+          - *avocado
+          - *shrimp
+          - *cucumber
+          - *salmon
+          - *mayonnaise
+
+#Menu Items of Yummyaki Restaurant
+    # Maki Roll
+
+    - !!models.MenuItem 
+        name: Alaskan
+        category: *maki
+        restaurant: *yummyaki
+        ingredients:
+            - *salmon
+            - *crabmeat
+            - *avocado
+            - *cucumber
+
+    - !!models.MenuItem 
+        name: Aloha
+        category: *maki
+        restaurant: *yummyaki
+        ingredients:
+            - *tuna
+            - *avocado
+
+    - !!models.MenuItem 
+        name: Baked Salmon
+        category: *maki
+        restaurant: *yummyaki
+        ingredients:
+            - *salmon
+            - *creamcheese
+            - *avocado
+
+    - !!models.MenuItem 
+        name: Baked Spicy Salmon
+        category: *maki
+        restaurant: *yummyaki
+        ingredients:
+            - *salmon
+            - *crabmeat
+            - *avocado
+            - *cucumber
+            - *egg
+
+    - !!models.MenuItem 
+        name: California
+        category: *maki
+        restaurant: *yummyaki
+        ingredients:
+            - *crabmeat
+            - *avocado
+            - *cucumber
+            - *egg
+
+    - !!models.MenuItem 
+        name: Calamari Tempura
+        category: *maki
+        restaurant: *yummyaki
+        ingredients:
+            - *calamari
+            - *tempura
+            - *crabmeat
+            - *avocado
+
+    - !!models.MenuItem 
+        name: Caterpillar
+        category: *maki
+        restaurant: *yummyaki
+        ingredients:
+            - *avocado
+            - *eel
+            - *crabmeat
+            - *cucumber
+
+    - !!models.MenuItem 
+        name: Chicken Teriyaki
+        category: *maki
+        restaurant: *yummyaki
+        ingredients:
+            - *avocado
+            - *cucumber
+            - *chicken
+            - *teriyaki
+            - *lettuce
+
+    - !!models.MenuItem 
+        name: Crab Meat
+        category: *maki
+        restaurant: *yummyaki
+        ingredients:
+            - *crabmeat
+            - *mayonnaise
+            - *avocado
+            - *cucumber
+
+    - !!models.MenuItem 
+        name: Crunch
+        category: *maki
+        restaurant: *yummyaki
+        ingredients:
+            - *shrimp
+            - *tempura
+            - *egg
+
+    - !!models.MenuItem 
+        name: Crunch Scallop
+        category: *maki
+        restaurant: *yummyaki
+        ingredients:
+            - *scallop
+            - *tempura
+            - *crabmeat
+            - *avocado
+            - *cucumber
+
+    - !!models.MenuItem 
+        name: Dynamite
+        category: *maki
+        restaurant: *yummyaki
+        ingredients:
+            - *shrimp
+            - *tempura
+            - *avocado
+
+    - !!models.MenuItem 
+        name: Eel & Avocado
+        category: *maki
+        restaurant: *yummyaki
+        ingredients:
+            - *eel
+            - *avocado
+
+    - !!models.MenuItem 
+        name: Energy
+        category: *maki
+        restaurant: *yummyaki
+        ingredients:
+            - *eel
+            - *goboroot
+            - *egg
+            - *avocado
+            - *cucumber
+
+    - !!models.MenuItem 
+        name: Green Dragon
+        category: *maki
+        restaurant: *yummyaki
+        ingredients:
+            - *shrimp
+            - *tempura
+            - *eel
+            - *avocado
+
+    - !!models.MenuItem 
+        name: House Special
+        category: *maki
+        restaurant: *yummyaki
+        ingredients:
+            - *salmon
+            - *avocado
+            - *cucumber
+            - *shrimp
+            - *tempura
+
+    - !!models.MenuItem 
+        name: Hungry
+        category: *maki
+        restaurant: *yummyaki
+        ingredients:
+            - *eel
+            - *salmon
+            - *avocado
+            - *crabmeat
+
+    - !!models.MenuItem 
+        name: Jessica
+        category: *maki
+        restaurant: *yummyaki
+        ingredients:
+            - *shrimp
+            - *tempura
+            - *cucumber
+            - *salmon
+            - *snapper
+            - *avocado
+
+    - !!models.MenuItem 
+        name: Paradise
+        category: *maki
+        restaurant: *yummyaki
+        ingredients:
+            - *salmon
+            - *snapper
+            - *egg
+
+    - !!models.MenuItem 
+        name: Philadelphia
+        category: *maki
+        restaurant: *yummyaki
+        ingredients:
+            - *salmon
+            - *creamcheese
+            - *cucumber
+
+    - !!models.MenuItem 
+        name: Rainbow
+        category: *maki
+        restaurant: *yummyaki
+        ingredients:
+            - *tuna
+            - *snapper
+            - *shrimp
+            - *salmon
+            - *avocado
+            - *crabmeat
+
+    - !!models.MenuItem 
+        name: Red Dragon
+        category: *maki
+        restaurant: *yummyaki
+        ingredients:
+            - *tuna
+            - *avocado
+            - *crabmeat
+
+    - !!models.MenuItem 
+        name: Rose
+        category: *maki
+        restaurant: *yummyaki
+        ingredients:
+            - *salmon
+            - *shrimp
+            - *tempura
+
+    - !!models.MenuItem 
+        name: Salmon
+        category: *maki
+        restaurant: *yummyaki
+        ingredients:
+            - *salmon
+
+    - !!models.MenuItem 
+        name: Salmon Delight
+        category: *maki
+        restaurant: *yummyaki
+        ingredients:
+            - *salmon
+            - *avocado
+
+    - !!models.MenuItem 
+        name: Salmon Skin
+        category: *maki
+        restaurant: *yummyaki
+        ingredients:
+            - *salmon
+            - *cucumber
+            - *avocado
+
+    - !!models.MenuItem 
+        name: Spicy Salmon
+        category: *maki
+        restaurant: *yummyaki
+        ingredients:
+            - *salmon
+            - *cucumber
+
+    - !!models.MenuItem 
+        name: Salmon
+        category: *maki
+        restaurant: *yummyaki
+        ingredients:
+            - *salmon
+
+    - !!models.MenuItem 
+        name: Pickled Radish
+        category: *maki
+        restaurant: *yummyaki
+        ingredients:
+            - *radish
+
+    # Vegetarian Rolls
+
+    - !!models.MenuItem 
+        name: Avocado & Cucumber
+        category: *vegroll
+        restaurant: *yummyaki
+        ingredients:
+            - *avocado
+            - *cucumber
+
+    - !!models.MenuItem 
+        name: Avocado & Green Bean Tempura
+        category: *vegroll
+        restaurant: *yummyaki
+        ingredients:
+            - *avocado
+            - *greenbean
+            - *tempura
+
+    - !!models.MenuItem 
+        name: Carrot & Avocado
+        category: *vegroll
+        restaurant: *yummyaki
+        ingredients:
+            - *carrot
+
+    - !!models.MenuItem 
+        name: Mushroom Tempura
+        category: *vegroll
+        restaurant: *yummyaki
+        ingredients:
+            - *mushrooms
+            - *tempura
+
+    - !!models.MenuItem 
+        name: Yam Tempura
+        category: *vegroll
+        restaurant: *yummyaki
+        ingredients:
+            - *potato
+            - *tempura
+
+    # Sushi
+
+    - !!models.MenuItem 
+        name: Avocado
+        category: *sushi
+        restaurant: *yummyaki
+        ingredients:
+            - *avocado
+
+    - !!models.MenuItem 
+        name: Cooked Egg
+        category: *sushi
+        restaurant: *yummyaki
+        ingredients:
+            - *egg
+
+    - !!models.MenuItem 
+        name: Mackerel
+        category: *sushi
+        restaurant: *yummyaki
+        ingredients:
+            - *mackerel
+
+    - !!models.MenuItem 
+        name: Seaweed Salad
+        category: *sushi
+        restaurant: *yummyaki
+        ingredients:
+            - *seaweed
+            - *lettuce
+
+    - !!models.MenuItem 
+        name: Spicy Salmon
+        category: *sushi
+        restaurant: *yummyaki
+        ingredients:
+            - *salmon
+
+    - !!models.MenuItem 
+        name: White Tuna
+        category: *sushi
+        restaurant: *yummyaki
+        ingredients:
+            - *tuna
+
+    - !!models.MenuItem 
+        name: BBQ Eel
+        category: *sushi
+        restaurant: *yummyaki
+        ingredients:
+            - *eel
+
+    - !!models.MenuItem 
+        name: Crab
+        category: *sushi
+        restaurant: *yummyaki
+        ingredients:
+            - *crabmeat
+
+    - !!models.MenuItem 
+        name: Shrimp
+        category: *sushi
+        restaurant: *yummyaki
+        ingredients:
+            - *shrimp
+
+    - !!models.MenuItem 
+        name: Shrimp
+        category: *sushi
+        restaurant: *yummyaki
+        ingredients:
+            - *egg
+
+    - !!models.MenuItem 
+        name: Spicy Tuna
+        category: *sushi
+        restaurant: *yummyaki
+        ingredients:
+            - *tuna
+
+    - !!models.MenuItem 
+        name: Salmon
+        category: *sushi
+        restaurant: *yummyaki
+        ingredients:
+            - *salmon
+
+    - !!models.MenuItem 
+        name: Snapper
+        category: *sushi
+        restaurant: *yummyaki
+        ingredients:
+            - *snapper
+
+    - !!models.MenuItem 
+        name: Surf Clam
+        category: *sushi
+        restaurant: *yummyaki
+        ingredients:
+            - *surfclam
+
+    # Sashimi
+
+    - !!models.MenuItem 
+        name: Crab
+        category: *sashimi
+        restaurant: *yummyaki
+        ingredients:
+            - *crabmeat
+
+    - !!models.MenuItem 
+        name: Salmon
+        category: *sashimi
+        restaurant: *yummyaki
+        ingredients:
+            - *salmon
+
+    - !!models.MenuItem 
+        name: Surf Clam
+        category: *sashimi
+        restaurant: *yummyaki
+        ingredients:
+            - *surfclam
+
+    - !!models.MenuItem 
+        name: Mackerel
+        category: *sashimi
+        restaurant: *yummyaki
+        ingredients:
+            - *mackerel
+
+    - !!models.MenuItem 
+        name: Shrimp
+        category: *sashimi
+        restaurant: *yummyaki
+        ingredients:
+            - *shrimp
+
+    - !!models.MenuItem 
+        name: White Tuna
+        category: *sashimi
+        restaurant: *yummyaki
+        ingredients:
+            - *tuna
+
+    - !!models.MenuItem 
+        name: Cooked Egg
+        category: *sashimi
+        restaurant: *yummyaki
+        ingredients:
+            - *egg
+
+    - !!models.MenuItem 
+        name: Octopus
+        category: *sashimi
+        restaurant: *yummyaki
+        ingredients:
+            - *octopus
+
+    - !!models.MenuItem 
+        name: Snapper
+        category: *sashimi
+        restaurant: *yummyaki
+        ingredients:
+            - *snapper
+
+#Menu Items of Niko Niko Restaurant
+
+#Menu Items of Nara Sushi Restaurant
+    # Soup & Salad
+    - !!models.MenuItem 
+        name: Miso Soup
+        category: *soupsalad
+        restaurant: *nara
+
+    - !!models.MenuItem 
+        name: Spicy & Sour Soup
+        category: *soupsalad
+        restaurant: *nara
+
+    - !!models.MenuItem 
+        name: Garden Salad
+        category: *soupsalad
+        restaurant: *nara
+
+    - !!models.MenuItem 
+        name: Flying Fish Egg Salad
+        category: *soupsalad
+        restaurant: *nara
+
+    - !!models.MenuItem 
+        name: Avocado Salad
+        category: *soupsalad
+        restaurant: *nara
+
+    - !!models.MenuItem 
+        name: Seaweed Salad
+        category: *soupsalad
+        restaurant: *nara
+
+    - !!models.MenuItem 
+        name: Edamame
+        category: *appetizer
+        restaurant: *nara
+
+    # Sushi Pizza
+    - !!models.MenuItem 
+        name: Salmon Pizza
+        category: *sushipizza
+        restaurant: *nara
+        ingredients:
+            - *salmon
+            - *mayonnaise
+
+    - !!models.MenuItem 
+        name: White Tuna Pizza
+        category: *sushipizza
+        restaurant: *nara
+        ingredients:
+            - *tuna
+            - *mayonnaise
+
+    - !!models.MenuItem 
+        name: Crab Pizza
+        category: *sushipizza
+        restaurant: *nara
+        ingredients:
+            - *crabmeat
+            - *mayonnaise
+
+    - !!models.MenuItem 
+        name: Seaweed Pizza
+        category: *sushipizza
+        restaurant: *nara
+        ingredients:
+            - *seaweed
+            - *mayonnaise
+
+    - !!models.MenuItem 
+        name: BBQ Eel Pizza
+        category: *sushipizza
+        restaurant: *nara
+        ingredients:
+            - *eel
+            - *mayonnaise
+
+    - !!models.MenuItem 
+        name: Rainbow Piza
+        category: *sushipizza
+        restaurant: *nara
+        ingredients:
+            - *tuna
+            - *salmon
+            - *yellowtail
+            - *mayonnaise
+
+    - !!models.MenuItem 
+        name: Salmon Pizza
+        category: *sushipizza
+        restaurant: *nara
+        ingredients:
+            - *cucumber
+            - *avocado
+            - *lettuce
+            - *mayonnaise
+
+    # Sashimi
+    - !!models.MenuItem 
+        name: Salmon
+        category: *sashimi
+        restaurant: *nara
+        ingredients:
+            - *salmon
+
+    - !!models.MenuItem 
+        name: White Tuna
+        category: *sashimi
+        restaurant: *nara
+        ingredients:
+            - *tuna
+
+    - !!models.MenuItem 
+        name: Salmon
+        category: *sashimi
+        restaurant: *nara
+        ingredients:
+            - *salmon
+
+    - !!models.MenuItem 
+        name: Red Snapper
+        category: *sashimi
+        restaurant: *nara
+        ingredients:
+            - *snapper
+
+    - !!models.MenuItem 
+        name: Surf Clam
+        category: *sashimi
+        restaurant: *nara
+        ingredients:
+            - *surfclam
+
+    - !!models.MenuItem 
+        name: Sweet egg
+        category: *sashimi
+        restaurant: *nara
+        ingredients:
+            - *egg
+
+    - !!models.MenuItem 
+        name: Mackerel
+        category: *sashimi
+        restaurant: *nara
+        ingredients:
+            - *mackerel
+
+    - !!models.MenuItem 
+        name: Shrimp
+        category: *sashimi
+        restaurant: *nara
+        ingredients:
+            - *shrimp
+
+    # Sushi
+    - !!models.MenuItem 
+        name: Salmon
+        category: *sushi
+        restaurant: *nara
+        ingredients:
+            - *salmon
+
+    - !!models.MenuItem 
+        name: White Tuna
+        category: *sushi
+        restaurant: *nara
+        ingredients:
+            - *tuna
+
+    - !!models.MenuItem 
+        name: Red Snapper
+        category: *sushi
+        restaurant: *nara
+        ingredients:
+            - *snapper
+
+    - !!models.MenuItem 
+        name: Surf Clam
+        category: *sushi
+        restaurant: *nara
+        ingredients:
+            - *surfclam
+
+    - !!models.MenuItem 
+        name: Crab
+        category: *sushi
+        restaurant: *nara
+        ingredients:
+            - *crabmeat
+
+    - !!models.MenuItem 
+        name: Sweet Egg
+        category: *sushi
+        restaurant: *nara
+        ingredients:
+            - *egg
+
+    - !!models.MenuItem 
+        name: Spicy Salmon
+        category: *sushi
+        restaurant: *nara
+        ingredients:
+            - *salmon
+
+    - !!models.MenuItem 
+        name: Spicy Tuna
+        category: *sushi
+        restaurant: *nara
+        ingredients:
+            - *tuna
+
+    - !!models.MenuItem 
+        name: Spicy Crab
+        category: *sushi
+        restaurant: *nara
+        ingredients:
+            - *crabmeat
+
+    - !!models.MenuItem 
+        name: BBQ Eel
+        category: *sushi
+        restaurant: *nara
+        ingredients:
+            - *eel
+
+    - !!models.MenuItem 
+        name: Salmon Rose
+        category: *sushi
+        restaurant: *nara
+        ingredients:
+            - *salmon
+
+    - !!models.MenuItem 
+        name: Mackerel
+        category: *sushi
+        restaurant: *nara
+        ingredients:
+            - *mackerel
+
+    - !!models.MenuItem 
+        name: Fish Eggs
+        category: *sushi
+        restaurant: *nara
+        ingredients:
+            - *fisheggs
+
+    - !!models.MenuItem 
+        name: Shrimp
+        category: *sushi
+        restaurant: *nara
+        ingredients:
+            - *shrimp
+
+    - !!models.MenuItem 
+        name: Avocado
+        category: *sushi
+        restaurant: *nara
+        ingredients:
+            - *avocado
+
+    - !!models.MenuItem 
+        name: Seaweed
+        category: *sushi
+        restaurant: *nara
+        ingredients:
+            - *seaweed
+
+    - !!models.MenuItem 
+        name: Octopus
+        category: *sushi
+        restaurant: *nara
+        ingredients:
+            - *octopus
+
+    - !!models.MenuItem 
+        name: Squid
+        category: *sushi
+        restaurant: *nara
+        ingredients:
+            - *squid
+
+    - !!models.MenuItem 
+        name: Capitain's Love
+        category: *sushi
+        restaurant: *nara
+        ingredients:
+            - *salmon
+            - *pringles
+
+    # Vegetarian Rolls
+    - !!models.MenuItem 
+        name: Avocado Hand Roll
+        category: *handroll
+        restaurant: *nara
+        ingredients:
+            - *avocado
+
+    - !!models.MenuItem 
+        name: Cucumber Hand Roll
+        category: *handroll
+        restaurant: *nara
+        ingredients:
+            - *cucumber
+
+    - !!models.MenuItem 
+        name: A & C Hand Roll
+        category: *handroll
+        restaurant: *nara
+        ingredients:
+            - *avocado
+            - *cucumber
+
+    - !!models.MenuItem 
+        name: Yam Tempura Hand Roll
+        category: *handroll
+        restaurant: *nara
+        ingredients:
+            - *potato
+            - *tempura
+
+    - !!models.MenuItem 
+        name: Seaweed Hand Roll
+        category: *handroll
+        restaurant: *nara
+        ingredients:
+            - *seaweed
+
+    - !!models.MenuItem 
+        name: Broccoli Hand Roll
+        category: *handroll
+        restaurant: *nara
+        ingredients:
+            - *broccoli
+            - *tempura
+
+    - !!models.MenuItem 
+        name: Cucumber Hand Roll
+        category: *handroll
+        restaurant: *nara
+        ingredients:
+            - *pumpkin
+            - *tempura
+
+    - !!models.MenuItem 
+        name: Cucumber Roll
+        category: *vegroll
+        restaurant: *nara
+        ingredients:
+            - *cucumber
+
+    - !!models.MenuItem 
+        name: Avocado Roll
+        category: *vegroll
+        restaurant: *nara
+        ingredients:
+            - *avocado
+
+    - !!models.MenuItem 
+        name: Asparagus Roll
+        category: *vegroll
+        restaurant: *nara
+        ingredients:
+            - *asparagus
+
+    - !!models.MenuItem 
+        name: A & C Roll
+        category: *vegroll
+        restaurant: *nara
+        ingredients:
+            - *avocado
+            - *cucumber
+
+    - !!models.MenuItem 
+        name: Yam Tempura Roll
+        category: *vegroll
+        restaurant: *nara
+        ingredients:
+            - *potato
+            - *tempura
+            - *mayonnaise
+
+    - !!models.MenuItem 
+        name: Broccoli Tempura Roll
+        category: *vegroll
+        restaurant: *nara
+        ingredients:
+            - *broccoli
+            - *tempura
+            - *mayonnaise
+
+    - !!models.MenuItem 
+        name: Vegetarian California Roll
+        category: *vegroll
+        restaurant: *nara
+        ingredients:
+            - *avocado
+            - *cucumber
+            - *radish
+
+    - !!models.MenuItem 
+        name: Onion Tempura Roll
+        category: *vegroll
+        restaurant: *nara
+        ingredients:
+            - *greenonion
+            - *tempura
+
+    - !!models.MenuItem 
+        name: Pumpkin Tempura Roll
+        category: *vegroll
+        restaurant: *nara
+        ingredients:
+            - *pumpkin
+            - *tempura
+
+    - !!models.MenuItem 
+        name: Seaweed Avocado Roll
+        category: *vegroll
+        restaurant: *nara
+        ingredients:
+            - *seaweed
+            - *avocado
+
+    # Maki & Rolls
+    - !!models.MenuItem 
+        name: Salmon Hand Roll
+        category: *handroll
+        restaurant: *nara
+        ingredients:
+            - *salmon
+
+    - !!models.MenuItem 
+        name: White Tuna Hand Roll
+        category: *handroll
+        restaurant: *nara
+        ingredients:
+            - *tuna
+
+    - !!models.MenuItem 
+        name: Crab Hand Roll
+        category: *handroll
+        restaurant: *nara
+        ingredients:
+            - *crabmeat
+
+    - !!models.MenuItem 
+        name: California Hand Roll
+        category: *handroll
+        restaurant: *nara
+        ingredients:
+            - *avocado
+            - *cucumber
+            - *crabmeat
+            - *fisheggs
+
+    - !!models.MenuItem 
+        name: Spicy Salmon Hand Roll
+        category: *handroll
+        restaurant: *nara
+        ingredients:
+            - *salmon
+
+    - !!models.MenuItem 
+        name: Spicy White Tuna Roll
+        category: *maki
+        restaurant: *nara
+        ingredients:
+            - *tuna
+
+    - !!models.MenuItem 
+        name: Spicy Crab Hand Roll
+        category: *handroll
+        restaurant: *nara
+        ingredients:
+            - *crabmeat
+
+    - !!models.MenuItem 
+        name: Salmon Skin Hand Roll
+        category: *handroll
+        restaurant: *nara
+        ingredients:
+            - *salmon
+
+    - !!models.MenuItem 
+        name: Shrimp Tempura Hand Roll
+        category: *handroll
+        restaurant: *nara
+        ingredients:
+            - *shrimp
+            - *tempura
+
+    - !!models.MenuItem 
+        name: BBQ Eel Hand Roll
+        category: *handroll
+        restaurant: *nara
+        ingredients:
+            - *eel
+
+    - !!models.MenuItem 
+        name: Snow Mountain Hand Roll
+        category: *handroll
+        restaurant: *nara
+        ingredients:
+            - *shrimp
+            - *tempura
+            - *cucumber
+            - *mayonnaise
+
+    - !!models.MenuItem 
+        name: Salmon Roll
+        category: *maki
+        restaurant: *nara
+        ingredients:
+            - *salmon
+
+    - !!models.MenuItem 
+        name: White Tuna Roll
+        category: *maki
+        restaurant: *nara
+        ingredients:
+            - *tuna
+
+    - !!models.MenuItem 
+        name: Sweet Egg Roll
+        category: *maki
+        restaurant: *nara
+        ingredients:
+            - *egg
+
+    - !!models.MenuItem 
+        name: Crabmeat Roll
+        category: *maki
+        restaurant: *nara
+        ingredients:
+            - *crabmeat
+
+    - !!models.MenuItem 
+        name: Chicken Teriyaki Roll
+        category: *maki
+        restaurant: *nara
+        ingredients:
+            - *chicken
+            - *teriyaki
+
+    - !!models.MenuItem 
+        name: Beef Teriyaki Roll
+        category: *maki
+        restaurant: *nara
+        ingredients:
+            - *beef
+            - *teriyaki
+
+    - !!models.MenuItem 
+        name: Shrimp Tempura Roll
+        category: *maki
+        restaurant: *nara
+        ingredients:
+            - *shrimp
+            - *tempura
+
+    - !!models.MenuItem 
+        name: Spicy Crispy Roll
+        category: *maki
+        restaurant: *nara
+        ingredients:
+            - *mayonnaise
+            - *tempura
+
+    - !!models.MenuItem 
+        name: BBQ Eel Roll
+        category: *maki
+        restaurant: *nara
+        ingredients:
+            - *eel
+            - *cucumber
+
+    - !!models.MenuItem 
+        name: California Roll
+        category: *maki
+        restaurant: *nara
+        ingredients:
+            - *avocado
+            - *cucumber
+            - *crabmeat
+            - *fisheggs
+
+    - !!models.MenuItem 
+        name: Spicy Salmon Roll
+        category: *maki
+        restaurant: *nara
+        ingredients:
+            - *salmon
+            - *mayonnaise
+            - *tempura
+
+    - !!models.MenuItem 
+        name: Spicy White Tuna Roll
+        category: *maki
+        restaurant: *nara
+        ingredients:
+            - *tuna
+            - *tempura
+            - *mayonnaise
+
+    - !!models.MenuItem 
+        name: Spicy Crab Roll
+        category: *maki
+        restaurant: *nara
+        ingredients:
+            - *crabmeat
+            - *tempura
+            - *mayonnaise
+
+    - !!models.MenuItem 
+        name: Salmon Skin Roll
+        category: *maki
+        restaurant: *nara
+        ingredients:
+            - *salmon
+            - *cucumber
+            - *mayonnaise
+
+    - !!models.MenuItem 
+        name: Mango Roll
+        category: *maki
+        restaurant: *nara
+        ingredients:
+            - *mango
+            - *crabmeat
+            - *mayonnaise
+
+#Menu Items of Sushi Stars Restaurant
+    # Soup & Salad
+    - !!models.MenuItem 
+        name: Miso Soup
+        category: *soupsalad
+        restaurant: *sushistar
+
+    - !!models.MenuItem 
+        name: Seafood Salad
+        category: *soupsalad
+        restaurant: *sushistar
+
+    - !!models.MenuItem 
+        name: Dumpling Soup
+        category: *soupsalad
+        restaurant: *sushistar
+
+    - !!models.MenuItem 
+        name: Green Salad
+        category: *soupsalad
+        restaurant: *sushistar
+
+    - !!models.MenuItem 
+        name: Seaweed Salad
+        category: *soupsalad
+        restaurant: *sushistar
+
+    - !!models.MenuItem 
+        name: Magog Salad
+        category: *soupsalad
+        restaurant: *sushistar
+
+    - !!models.MenuItem 
+        name: Avocado Salad
+        category: *soupsalad
+        restaurant: *sushistar
+
+    # Maki & rolls
+    - !!models.MenuItem 
+        name: Tempura Shrimp Roll
+        category: *maki
+        restaurant: *sushistar
+        ingredients:
+          - *tempura
+          - *shrimp
+          - *mayonnaise
+          - *cucumber
+
+    - !!models.MenuItem 
+        name: Tempura Squid Roll
+        category: *maki
+        restaurant: *sushistar
+        ingredients:
+          - *tempura
+          - *squid
+          - *mayonnaise
+
+    - !!models.MenuItem 
+        name: Salmon Tempura Roll
+        category: *maki
+        restaurant: *sushistar
+        ingredients:
+          - *tempura
+          - *salmon
+          - *greenonion
+
+    - !!models.MenuItem 
+        name: Spicy White Tuna Tempura Roll
+        category: *maki
+        restaurant: *sushistar
+        ingredients:
+          - *tuna
+          - *greenonion
+          - *mayonnaise
+
+    - !!models.MenuItem 
+        name: Salmon Crispy Roll
+        category: *maki
+        restaurant: *sushistar
+        ingredients:
+          - *salmon
+          - *tempura
+          - *greenonion
+          - *mayonnaise
+
+    - !!models.MenuItem 
+        name: Salmon Crispy Hand Roll
+        category: *handroll
+        restaurant: *sushistar
+        ingredients:
+          - *salmon
+          - *tempura
+          - *greenonion
+          - *mayonnaise
+
+    - !!models.MenuItem 
+        name: Philadelphia Roll
+        category: *maki
+        restaurant: *sushistar
+        ingredients:
+          - *salmon
+          - *creamcheese
+          - *greenonion
+
+    - !!models.MenuItem 
+        name: Spicy Crab Meat Roll
+        category: *maki
+        restaurant: *sushistar
+        ingredients:
+          - *crabmeat
+          - *mayonnaise
+          - *tempura
+
+    - !!models.MenuItem 
+        name: Spicy Crab Meat Hand Roll
+        category: *handroll
+        restaurant: *sushistar
+        ingredients:
+          - *crabmeat
+          - *mayonnaise
+          - *tempura
+
+    - !!models.MenuItem 
+        name: Mango Roll
+        category: *maki
+        restaurant: *sushistar
+        ingredients:
+          - *mango
+
+    - !!models.MenuItem 
+        name: White Tuna Roll
+        category: *maki
+        restaurant: *sushistar
+        ingredients:
+          - *tuna
+
+    - !!models.MenuItem 
+        name: White Tuna Hand Roll
+        category: *handroll
+        restaurant: *sushistar
+        ingredients:
+          - *tuna
+
+    - !!models.MenuItem 
+        name: White Tuna Crispy Roll
+        category: *maki
+        restaurant: *sushistar
+        ingredients:
+          - *tuna
+          - *tempura
+
+    - !!models.MenuItem 
+        name: White Tuna Crispy Hand Roll
+        category: *handroll
+        restaurant: *sushistar
+        ingredients:
+          - *tuna
+          - *tempura
+
+    - !!models.MenuItem 
+        name: Salmon Avocado Roll
+        category: *maki
+        restaurant: *sushistar
+        ingredients:
+          - *salmon
+          - *avocado
+
+    - !!models.MenuItem 
+        name: Hamilton Roll
+        category: *maki
+        restaurant: *sushistar
+
+    - !!models.MenuItem 
+        name: Deep Fried Roll
+        category: *maki
+        restaurant: *sushistar
+        ingredients:
+          - *tempura
+          - *mayonnaise
+
+    - !!models.MenuItem 
+        name: Flying Fish Egg Roll
+        category: *maki
+        restaurant: *sushistar
+        ingredients:
+          - *mayonnaise
+          - *fisheggs
+
+    - !!models.MenuItem 
+        name: Flying Fish Egg Hand Roll
+        category: *handroll
+        restaurant: *sushistar
+        ingredients:
+          - *mayonnaise
+          - *fisheggs
+
+    - !!models.MenuItem 
+        name: Florida Roll
+        category: *vegroll
+        restaurant: *sushistar
+        ingredients:
+          - *fisheggs
+          - *cucumber
+          - *avocado
+
+    - !!models.MenuItem 
+        name: Vegetable Roll
+        category: *vegroll
+        restaurant: *sushistar
+        ingredients:
+          - *avocado
+          - *cucumber
+          - *potato
+
+    - !!models.MenuItem 
+        name: California Roll
+        category: *maki
+        restaurant: *sushistar
+        ingredients:
+          - *avocado
+          - *cucumber
+          - *fisheggs
+
+    - !!models.MenuItem 
+        name: California Hand Roll
+        category: *handroll
+        restaurant: *sushistar
+        ingredients:
+          - *avocado
+          - *cucumber
+          - *fisheggs
+
+    - !!models.MenuItem 
+        name: Beef Teriyaki Roll
+        category: *maki
+        restaurant: *sushistar
+        ingredients:
+          - *beef
+          - *teriyaki
+
+    - !!models.MenuItem 
+        name: Spicy White Tuna Roll
+        category: *maki
+        restaurant: *sushistar
+        ingredients:
+          - *tuna
+          - *mayonnaise
+          - *tempura
+
+    - !!models.MenuItem 
+        name: Spicy White Tuna Hand Roll
+        category: *handroll
+        restaurant: *sushistar
+        ingredients:
+          - *tuna
+          - *mayonnaise
+          - *tempura
+
+    - !!models.MenuItem 
+        name: Salmon Roll
+        category: *maki
+        restaurant: *sushistar
+        ingredients:
+          - *salmon
+
+    - !!models.MenuItem 
+        name: Salmon Hand Roll
+        category: *handroll
+        restaurant: *sushistar
+        ingredients:
+          - *salmon
+
+    - !!models.MenuItem 
+        name: Spicy Salmon Hand Roll
+        category: *handroll
+        restaurant: *sushistar
+        ingredients:
+          - *salmon
+          - *mayonnaise
+
+    - !!models.MenuItem 
+        name: BBQ Eel Roll
+        category: *maki
+        restaurant: *sushistar
+        ingredients:
+          - *eel
+          - *mayonnaise
+
+    - !!models.MenuItem 
+        name: BBQ Eel Hand Roll
+        category: *handroll
+        restaurant: *sushistar
+        ingredients:
+          - *eel
+          - *mayonnaise
+
+    - !!models.MenuItem 
+        name: Chicken Tempura Roll
+        category: *maki
+        restaurant: *sushistar
+        ingredients:
+          - *tempura
+          - *chicken
+
+    - !!models.MenuItem 
+        name: Chicken Teriyaki Roll
+        category: *maki
+        restaurant: *sushistar
+        ingredients:
+          - *chicken
+          - *teriyaki
+
+    - !!models.MenuItem 
+        name: Asparagus Roll
+        category: *maki
+        restaurant: *sushistar
+        ingredients:
+          - *asparagus
+
+    - !!models.MenuItem 
+        name: Avocado Roll
+        category: *maki
+        restaurant: *sushistar
+        ingredients:
+          - *avocado
+
+    - !!models.MenuItem 
+        name: Avocado Hand Roll
+        category: *handroll
+        restaurant: *sushistar
+        ingredients:
+          - *avocado
+
+    - !!models.MenuItem 
+        name: Cucumber Roll
+        category: *maki
+        restaurant: *sushistar
+        ingredients:
+          - *cucumber
+
+    - !!models.MenuItem 
+        name: Crabmeat Roll
+        category: *maki
+        restaurant: *sushistar
+        ingredients:
+          - *crabmeat
+
+    - !!models.MenuItem 
+        name: Crabmeat Hand Roll
+        category: *handroll
+        restaurant: *sushistar
+        ingredients:
+          - *crabmeat
+
+    - !!models.MenuItem 
+        name: Avocado Crispy Roll
+        category: *maki
+        restaurant: *sushistar
+        ingredients:
+          - *avocado
+          - *tempura
+
+    - !!models.MenuItem 
+        name: Deep Fried Sweet Potato Roll
+        category: *maki
+        restaurant: *sushistar
+        ingredients:
+          - *potato
+          - *tempura
+
+    - !!models.MenuItem 
+        name: Tempura Shrimp Roll
+        category: *maki
+        restaurant: *sushistar
+        ingredients:
+          - *tempura
+
+    - !!models.MenuItem 
+        name: Cucumber & Avocado Roll
+        category: *maki
+        restaurant: *sushistar
+        ingredients:
+          - *cucumber
+          - *avocado
+
+    - !!models.MenuItem 
+        name: Cucumber & Avocado Hand Roll
+        category: *handroll
+        restaurant: *sushistar
+        ingredients:
+          - *cucumber
+          - *avocado
+
+    # Special Rolls
+    - !!models.MenuItem 
+        name: Rainbow Roll
+        category: *specialroll
+        restaurant: *sushistar
+        ingredients:
+          - *salmon
+          - *yellowtail
+          - *snapper
+          - *mackerel
+
+    - !!models.MenuItem 
+        name: Spider Roll
+        category: *specialroll
+        restaurant: *sushistar
+        ingredients:
+          - *crabmeat
+          - *fisheggs
+          - *avocado
+          - *cucumber
+          - *greenonion
+          - *mayonnaise
+
+    - !!models.MenuItem 
+        name: Green Dragon Roll
+        category: *specialroll
+        restaurant: *sushistar
+        ingredients:
+          - *tempura
+          - *shrimp
+          - *avocado
+
+    - !!models.MenuItem 
+        name: Red Dragon Roll
+        category: *specialroll
+        restaurant: *sushistar
+        ingredients:
+          - *tempura
+          - *shrimp
+          - *salmon
+
+    - !!models.MenuItem 
+        name: Black Dragon Roll
+        category: *specialroll
+        restaurant: *sushistar
+        ingredients:
+          - *tempura
+          - *shrimp
+          - *eel
+
+    - !!models.MenuItem 
+        name: Vegetable Dragon Roll
+        category: *specialroll
+        restaurant: *sushistar
+        ingredients:
+          - *tempura
+          - *avocado
+          - *cucumber
+
+    - !!models.MenuItem 
+        name: White Dragon Roll
+        category: *specialroll
+        restaurant: *sushistar
+        ingredients:
+          - *tempura
+          - *crabmeat
+          - *tuna
+
+    - !!models.MenuItem 
+        name: Sushi Stars Roll
+        category: *specialroll
+        restaurant: *sushistar
+        ingredients:
+          - *eel
+          - *crabmeat
+          - *shrimp
+          - *tempura
+          - *fisheggs
+          - *avocado
+          - *cucumber
+          - *asparagus
+          - *greenonion
+          - *mayonnaise
+
+    - !!models.MenuItem 
+        name: Volcano Roll
+        category: *specialroll
+        restaurant: *sushistar
+        ingredients:
+          - *tempura
+          - *crabmeat
+          - *tuna
+          - *mayonnaise
+
+    - !!models.MenuItem 
+        name: Angry Dragon Roll
+        category: *specialroll
+        restaurant: *sushistar
+        ingredients:
+          - *tuna
+          - *shrimp
+          - *crabmeat
+          - *mayonnaise
+
+    # Sushi Pizza
+    - !!models.MenuItem 
+        name: BBQ Eel Sushi Pizza
+        category: *sushipizza
+        restaurant: *sushistar
+        ingredients:
+          - *eel
+          - *mayonnaise
+
+    - !!models.MenuItem 
+        name: Salmon Sushi Pizza
+        category: *sushipizza
+        restaurant: *sushistar
+        ingredients:
+          - *salmon
+          - *mayonnaise
+
+    - !!models.MenuItem 
+        name: White Tuna Sushi Pizza
+        category: *sushipizza
+        restaurant: *sushistar
+        ingredients:
+          - *tuna
+          - *mayonnaise
+
+    - !!models.MenuItem 
+        name: Rainbow Sushi Pizza
+        category: *sushipizza
+        restaurant: *sushistar
+        ingredients:
+          - *snapper
+          - *salmon
+          - *yellowtail
+          - *mayonnaise
+
+    - !!models.MenuItem 
+        name: Grilled Mushroom Sushi Pizza
+        category: *sushipizza
+        restaurant: *sushistar
+        ingredients:
+          - *mushrooms
+          - *mayonnaise
+
+    - !!models.MenuItem 
+        name: Grilled Sushi Pizza
+        category: *sushipizza
+        restaurant: *sushistar
+        ingredients:
+          - *eggplant
+          - *mayonnaise
+
+    # Sushi
+    - !!models.MenuItem 
+        name: White Tuna Sushi
+        category: *sushi
+        restaurant: *sushistar
+        ingredients:
+          - *tuna
+
+    - !!models.MenuItem 
+        name: Salmon Sushi
+        category: *sushi
+        restaurant: *sushistar
+        ingredients:
+          - *salmon
+
+    - !!models.MenuItem 
+        name: Snapper Sushi
+        category: *sushi
+        restaurant: *sushistar
+        ingredients:
+          - *snapper
+
+    - !!models.MenuItem 
+        name: Shrimp Sushi
+        category: *sushi
+        restaurant: *sushistar
+        ingredients:
+          - *shrimp
+
+    - !!models.MenuItem 
+        name: Surf Clam Sushi
+        category: *sushi
+        restaurant: *sushistar
+        ingredients:
+          - *surfclam
+
+    - !!models.MenuItem 
+        name: BBQ Eel Sushi
+        category: *sushi
+        restaurant: *sushistar
+        ingredients:
+          - *eel
+
+    - !!models.MenuItem 
+        name: Flying Fish Egg Sushi
+        category: *sushi
+        restaurant: *sushistar
+        ingredients:
+          - *fisheggs
+
+    - !!models.MenuItem 
+        name: Crab Meat Sushi
+        category: *sushi
+        restaurant: *sushistar
+        ingredients:
+          - *crabmeat
+
+    - !!models.MenuItem 
+        name: Egg Sushi
+        category: *sushi
+        restaurant: *sushistar
+        ingredients:
+          - *egg
+
+    - !!models.MenuItem 
+        name: Mackerel Sushi
+        category: *sushi
+        restaurant: *sushistar
+        ingredients:
+          - *mackerel
+
+    # Sashimi
+    - !!models.MenuItem 
+        name: White Tuna Sashimi
+        category: *sashimi
+        restaurant: *sushistar
+        ingredients:
+          - *tuna
+
+    - !!models.MenuItem 
+        name: Salmon Sashimi
+        category: *sashimi
+        restaurant: *sushistar
+        ingredients:
+          - *salmon
+
+    - !!models.MenuItem 
+        name: Snapper Sashimi
+        category: *sashimi
+        restaurant: *sushistar
+        ingredients:
+          - *snapper
+
+    - !!models.MenuItem 
+        name: Shrimp Sashimi
+        category: *sashimi
+        restaurant: *sushistar
+        ingredients:
+          - *shrimp
+
+    - !!models.MenuItem 
+        name: Surf Clam Sashimi
+        category: *sashimi
+        restaurant: *sushistar
+        ingredients:
+          - *surfclam
+
+    - !!models.MenuItem 
+        name: BBQ Eel Sashimi
+        category: *sashimi
+        restaurant: *sushistar
+        ingredients:
+          - *eel
+
+    - !!models.MenuItem 
+        name: Flying Fish Egg Sashimi
+        category: *sashimi
+        restaurant: *sushistar
+        ingredients:
+          - *fisheggs
+
+    - !!models.MenuItem 
+        name: Crab Meat Sashimi
+        category: *sashimi
+        restaurant: *sushistar
+        ingredients:
+          - *crabmeat
+
+    - !!models.MenuItem 
+        name: Egg Sashimi
+        category: *sashimi
+        restaurant: *sushistar
+        ingredients:
+          - *egg
+
+    - !!models.MenuItem 
+        name: Mackerel Sashimi
+        category: *sashimi
+        restaurant: *sushistar
+        ingredients:
+          - *mackerel
+
+#Menu Items of Green Sushi Restaurant
+    # Sushi
+    - !!models.MenuItem 
+        name: Salmon
+        category: *sushi
+        restaurant: *greensushi
+        ingredients:
+            - *salmon
+
+    - !!models.MenuItem 
+        name: White Tuna
+        category: *sushi
+        restaurant: *greensushi
+        ingredients:
+            - *tuna
+
+    - !!models.MenuItem 
+        name: Red Snapper
+        category: *sushi
+        restaurant: *greensushi
+        ingredients:
+            - *snapper
+
+    - !!models.MenuItem 
+        name: Crab Meat
+        category: *sushi
+        restaurant: *greensushi
+        ingredients:
+            - *crabmeat
+
+    - !!models.MenuItem 
+        name: Mackerel
+        category: *sushi
+        restaurant: *greensushi
+        ingredients:
+            - *mackerel
+
+    - !!models.MenuItem 
+        name: Shrimp
+        category: *sushi
+        restaurant: *greensushi
+        ingredients:
+            - *shrimp
+
+    - !!models.MenuItem 
+        name: Surf Clam
+        category: *sushi
+        restaurant: *greensushi
+        ingredients:
+            - *surfclam
+
+    - !!models.MenuItem 
+        name: Tamago
+        category: *sushi
+        restaurant: *greensushi
+        ingredients:
+            - *fisheggs
+
+    - !!models.MenuItem 
+        name: Tofu
+        category: *sushi
+        restaurant: *greensushi
+        ingredients:
+            - *tofu
+
+    - !!models.MenuItem 
+        name: Flying Fish Roe
+        category: *sushi
+        restaurant: *greensushi
+        ingredients:
+            - *fisheggs
+
+    - !!models.MenuItem 
+        name: Spicy White Tuna
+        category: *sushi
+        restaurant: *greensushi
+        ingredients:
+            - *tuna
+
+    - !!models.MenuItem 
+        name: Spicy Salmon
+        category: *sushi
+        restaurant: *greensushi
+        ingredients:
+            - *salmon
+
+    - !!models.MenuItem 
+        name: Spicy Crab Meat
+        category: *sushi
+        restaurant: *greensushi
+        ingredients:
+            - *crabmeat
+
+    # Special Roll
+
+    - !!models.MenuItem 
+        name: Rainbow Roll
+        category: *specialroll
+        restaurant: *greensushi
+        ingredients:
+            - *crabmeat
+            - *avocado
+            - *cucumber
+            - *fisheggs
+
+    - !!models.MenuItem 
+        name: Red Dragon Roll
+        category: *specialroll
+        restaurant: *greensushi
+        ingredients:
+            - *salmon
+            - *mayonnaise
+            - *avocado
+            - *cucumber
+            - *fisheggs
+            - *crabmeat
+            - *tempura
+            - *shrimp
+
+    - !!models.MenuItem 
+        name: Black Dragon Roll
+        category: *specialroll
+        restaurant: *greensushi
+        ingredients:
+            - *eel
+            - *mayonnaise
+            - *avocado
+            - *cucumber
+            - *fisheggs
+            - *crabmeat
+            - *tempura
+            - *shrimp
+
+    - !!models.MenuItem 
+        name: Green Dragon Roll
+        category: *specialroll
+        restaurant: *greensushi
+        ingredients:
+            - *avocado
+            - *mayonnaise
+            - *cucumber
+            - *fisheggs
+            - *crabmeat
+            - *tempura
+            - *shrimp
+
+    - !!models.MenuItem 
+        name: White Dragon Roll
+        category: *specialroll
+        restaurant: *greensushi
+        ingredients:
+            - *tuna
+            - *mayonnaise
+            - *avocado
+            - *cucumber
+            - *fisheggs
+            - *crabmeat
+            - *tempura
+            - *shrimp
+
+    # Maki Roll
+
+    - !!models.MenuItem 
+        name: Salmon
+        category: *maki
+        restaurant: *greensushi
+        ingredients:
+            - *salmon
+
+    - !!models.MenuItem 
+        name: White Tuna
+        category: *maki
+        restaurant: *greensushi
+        ingredients:
+            - *tuna
+
+    - !!models.MenuItem 
+        name: Spicy Salmon
+        category: *maki
+        restaurant: *greensushi
+        ingredients:
+            - *salmon
+
+    - !!models.MenuItem 
+        name: Spicy White Tuna
+        category: *maki
+        restaurant: *greensushi
+        ingredients:
+            - *tuna
+
+    - !!models.MenuItem 
+        name: Spicy Crab Meat
+        category: *maki
+        restaurant: *greensushi
+        ingredients:
+            - *crabmeat
+
+    - !!models.MenuItem 
+        name: Sexy Squid
+        category: *maki
+        restaurant: *greensushi
+        ingredients:
+            - *squid
+
+    - !!models.MenuItem 
+        name: California
+        category: *maki
+        restaurant: *greensushi
+        ingredients:
+            - *crabmeat
+            - *avocado
+            - *cucumber
+
+    - !!models.MenuItem 
+        name: Red Snapper Tempura
+        category: *maki
+        restaurant: *greensushi
+        ingredients:
+            - *snapper
+            - *tempura
+
+    - !!models.MenuItem 
+        name: Shrimp Tempura
+        category: *maki
+        restaurant: *greensushi
+        ingredients:
+            - *shrimp
+            - *tempura
+
+    - !!models.MenuItem 
+        name: Chicken Teriyaki
+        category: *maki
+        restaurant: *greensushi
+        ingredients:
+            - *chicken
+            - *teriyaki
+
+    - !!models.MenuItem 
+        name: Mango Crab Meat
+        category: *maki
+        restaurant: *greensushi
+        ingredients:
+            - *mango
+            - *crabmeat
+
+    - !!models.MenuItem 
+        name: B.C
+        category: *maki
+        restaurant: *greensushi
+        ingredients:
+            - *salmon
+            - *avocado
+            - *fisheggs
+
+    - !!models.MenuItem 
+        name: BBQ Eel
+        category: *maki
+        restaurant: *greensushi
+        ingredients:
+            - *eel
+
+    - !!models.MenuItem 
+        name: Salmon Skin
+        category: *maki
+        restaurant: *greensushi
+        ingredients:
+            - *salmon
+
+    - !!models.MenuItem 
+        name: Masago
+        category: *maki
+        restaurant: *greensushi
+        ingredients:
+            - *fisheggs
+
+    - !!models.MenuItem 
+        name: Tempura Crab Meat
+        category: *maki
+        restaurant: *greensushi
+        ingredients:
+            - *tempura
+            - *crabmeat
+
+    - !!models.MenuItem 
+        name: Dynamite
+        category: *maki
+        restaurant: *greensushi
+        ingredients:
+            - *mayonnaise
+            - *avocado
+            - *cucumber
+            - *fisheggs
+            - *crabmeat
+            - *tempura
+            - *shrimp
+
+    - !!models.MenuItem 
+        name: Volcano Roll
+        category: *maki
+        restaurant: *greensushi
+        ingredients:
+            - *crabmeat
+            - *avocado
+            - *cucumber
+            - *fisheggs

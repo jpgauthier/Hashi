@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp">
+
+        <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:gravity="start"
+                    android:text="Address"/>
+
+            <TextView
+                    android:id="@+id/restaurant_info_address"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:fontFamily="sans-serif-light"
+                    android:textStyle="italic"
+                    android:textSize="15sp"
+                    android:gravity="end"
+                    android:layout_weight="1"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:gravity="start"
+                    android:text="City"/>
+
+            <TextView
+                    android:id="@+id/restaurant_info_city"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:fontFamily="sans-serif-light"
+                    android:textStyle="italic"
+                    android:textSize="15sp"
+                    android:gravity="end"
+                    android:layout_weight="1"/>
+
+        </TableRow>
+
+        <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:gravity="start"
+                    android:text="Phone"/>
+
+            <TextView
+                    android:id="@+id/restaurant_info_phone"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:fontFamily="sans-serif-light"
+                    android:textStyle="italic"
+                    android:textSize="15sp"
+                    android:gravity="end"
+                    android:layout_weight="1"/>
+        </TableRow>
+
+        <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:gravity="start"
+                    android:text="Rating"/>
+
+            <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:layout_weight="1">
+
+                <RatingBar
+                        android:id="@+id/restaurant_info_rating"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="?android:attr/ratingBarStyleSmall"
+                        android:progressTint="@color/colorAccent"
+                        android:gravity="end"
+                        android:layout_gravity="end"
+                        android:numStars="5"
+                        android:stepSize="0.5"/>
+
+            </LinearLayout>
+        </TableRow>
+
+        <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp">
+
+            <Button
+                    android:id="@+id/restaurant_info_directions"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimary"
+                    android:text="Directions"
+                    android:textAllCaps="false"
+                    android:textColor="@color/windowBackground"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:onClick="getDirections"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:drawableLeft="@drawable/ic_map_marker"
+                    android:layout_weight="0.5"
+                    android:layout_marginEnd="4dp"/>
+
+            <Button
+                    android:id="@+id/restaurant_info_phonecall"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimary"
+                    android:text="Call"
+                    android:textAllCaps="false"
+                    android:textColor="@color/windowBackground"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:onClick="phoneCall"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:drawableLeft="@drawable/ic_phone"
+                    android:layout_weight="0.5"
+                    android:layout_marginStart="4dp"/>
+
+        </TableRow>
+
+        <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp">
+
+            <Button
+                    android:id="@+id/restaurant_info_viewmenu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimary"
+                    android:text="View restaurant menu"
+                    android:textAllCaps="false"
+                    android:textColor="@color/windowBackground"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:onClick="viewMenu"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:drawableLeft="@drawable/ic_list"
+                    android:layout_weight="0.5"/>
+
+        </TableRow>
+    </TableLayout>
+</LinearLayout>
